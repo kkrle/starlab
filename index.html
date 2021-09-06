@@ -386,10 +386,22 @@
 					else final.className+=" tudelft-publication-conference";
 				}
 				else {
-					if (!element.innerHTML.search(/"workshop"/)<0) final.className+=" tudelft-publication-workshop"; 
+					console.log(element.innerHTML.search(/Workshop/))
+					if (!(element.innerHTML.search(/Workshop/)<0)) final.className+=" tudelft-publication-workshop"; 
 				}
 				element.querySelector(".explain").remove();
-				final.innerHTML=element.innerHTML;
+				var links = element.querySelectorAll("a");
+				for (let index = 0; index < links.length; index++) {
+					const link = links[index];
+					if (link.innerHTML=="DOI") link.remove();
+				}
+				var modify = element.innerHTML
+				modify = "<h6>" + modify + "</p>";
+				modify = modify.replace("<em>","</h6><h5>");
+				modify = modify.replace(/<\/em>\.?/,"</h5><p>");
+				modify = modify.replace(/(<br>)/,"");
+				modify = modify.replace("|","");
+				final.innerHTML=modify;
 				document.getElementById("extracted").appendChild(final);
 			}
 		</script>
