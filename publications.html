@@ -9,13 +9,12 @@
     <body>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
         <script src="js/publications.js"></script>
+		<script src="js/menu.js"></script>
 		<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
 			<div class="container-lg">
 				<a class="navbar-brand" href="#">STAR Lab</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<i class="bi bi-list navbar-brand" id="TUDelftMenuButton" onclick="menuIconOnClick()"></i>
+				<div class="navbar-collapse tudelft-hide" id="TUDelftContainerOfLinks" onclick="containerOnClick(event)">
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 						<li class="nav-item">
 							<a class="nav-link" aria-current="page" href="index.html#">Home</a>
@@ -48,1272 +47,1275 @@
 				
 			</div>
 		</div>
-		<div class="container-lg">
-			<div id=filters>
-				<h3>Show only...</h3>
-				<button type="button" id="filter-preprint" class="btn btn-outline-primary" onclick="filter('preprint')">Preprints</button>
-				<button type="button" id="filter-conference" class="btn btn-outline-primary" onclick="filter('conference')">Conferences</button>
-				<button type="button" id="filter-journal" class="btn btn-outline-primary" onclick="filter('journal')">Journals</button>
-				<button type="button" id="filter-workshop" class="btn btn-outline-primary" onclick="filter('workshop')">Workshops</button>
+		<div class="container-fluid">
+			<div class="container-lg">
+				<div id=filters>
+					<h3>Show only...</h3>
+					<button type="button" id="filter-preprint" class="btn btn-outline-primary" onclick="filter('preprint')">Preprints</button>
+					<button type="button" id="filter-conference" class="btn btn-outline-primary" onclick="filter('conference')">Conferences</button>
+					<button type="button" id="filter-journal" class="btn btn-outline-primary" onclick="filter('journal')">Journals</button>
+					<button type="button" id="filter-workshop" class="btn btn-outline-primary" onclick="filter('workshop')">Workshops</button>
+				</div>
+			</div>
+			<div class="container-lg tudelft-padding" id="publications">
+				<div class="tudelft-year"><h3>2021</h3><div class="tudelft-publication tudelft-publication-preprint"><h6>Harland,&nbsp;J.; Thangarajah,&nbsp;J.; and Yorke-Smith,&nbsp;N.
+				</h6><h5><b>Quantifying the Progress of Goals in Intelligent Agents</b></h5><p>
+				International Journal of Agent-Oriented Software Engineering,
+				2021 (to appear).
+				&nbsp;
+				<span class="tudelft-copyright">©2021 Inderscience</span>
+				
+				<br>&nbsp;
+			  
+				</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Oudshoorn,&nbsp;M.; Koppenberg,&nbsp;T.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/j35.pdf"><h5><b>Optimisation of Annual Planned Rail Maintenance</b></h5></a><p>
+				Computer-Aided Civil and Infrastructure Engineering,
+				August 2021.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/j35.pdf">PDF</a>  
+					
+				<br>&nbsp;
+				
+				</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Doolaard,&nbsp;F. and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/w44.pdf"><h5>Online Learning of Deeper Variable Ordering Heuristics for Constraint Optimisation</h5></a><p>
+				Presented at: IJCAI'21 Workshop on Data Science Meets Optimisation,
+				Montreal, Canada, August 2021.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/w44.pdf">PDF</a>
+				
+				<br>&nbsp;
+			  
+				</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>van Driel,&nbsp;R.; Demirović,&nbsp;E.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/c28.pdf"><h5><b>Learning Variable Activity Initialisation for Lazy Clause Generation Solvers</b></h5></a><p>
+				Proceedings of the 18th International Conference on the Integration of Constraint Programming, Artificial Intelligence, and Operations Research (CPAIOR'21),
+				Vienna, Austria, July 2021.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/c28.pdf">PDF</a> &nbsp;<span class="tudelft-copyright">©2021 Springer</span>
+				
+				<br>&nbsp;
+			
+				</p></div><div class="tudelft-publication tudelft-publication-journal"><h6>Yilmaz,&nbsp;K. and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/j34.pdf"><h5><b>A Study of Learning Search Approximation in Mixed Integer Branch and Bound: Node Selection in SCIP</b></h5></a><p>
+				AI, <b>2(2)</b>, April 2021.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/j34.pdf">PDF</a>   &nbsp;
+				
+				<br>&nbsp;
+			  
+				</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Overwater,&nbsp;A. and Yorke-Smith;&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/j33.pdf"><h5><b>Agent-Based Simulation of Short-Term Peer-to-Peer Rentals: Evidence from the Amsterdam Housing Market</b></h5></a><p>
+				Environment and Planning B: Urban Analytics and City Science, 2021
+				(to appear).
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/j33.pdf">PDF</a>   &nbsp;<span class="tudelft-copyright">©2021 SAGE</span>
+				
+				<br>&nbsp;
+			
+				</p></div><div class="tudelft-publication tudelft-publication-journal"><h6>Fisher,&nbsp;M.; Mascardi,&nbsp;V.; Rozier,&nbsp;K.&nbsp;Y.; Schlingloff,&nbsp;H.; Winikoff,&nbsp;M.; and Yorke-Smith;&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/j32.pdf"><h5><b>Towards a Framework for Certification of Reliable Autonomous Systems</b></h5></a><p>
+				Autonomous Agents and Multi-Agent Systems, <b>35</b>, April 2021.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/j32.pdf">PDF</a>   &nbsp;
+				
+				<br>&nbsp;
+			
+				</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Telang,&nbsp;P.; Singh,&nbsp;M.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/c27.pdf"><h5><b>Maintenance of Social Commitments in Multiagent Systems</b></h5></a><p>
+				Proceedings of the 35th AAAI Conference on Artificial Intelligence (AAAI'21), Vancouver, Canada, February 2021.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/c27.pdf">PDF</a>
+				&nbsp;<span class="tudelft-copyright">©2021 AAAI</span>    
+				
+				<br>&nbsp;
+				
+				</p></div><div class="tudelft-publication tudelft-publication-journal"><h6>Termos,&nbsp;A.; Picascia,&nbsp;S.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/j31.pdf"><h5><b>Agent-Based Simulation of West Asian Urban Dynamics: Impact of Refugees</b></h5></a><p>
+				Journal of Artificial Societies and Social Simulation, <b>24(1)</b>, January 2021.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/j31.pdf">PDF</a>   
+				
+				<br>&nbsp;
+			  
+				</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Thorbjarnarson,&nbsp;T. and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/w43.pdf"><h5>On Training Neural Networks with Mixed Integer Programming</h5></a><p>
+				Presented at: IJCAI-PRICAI'20 Workshop on Data Science Meets Optimisation.  Yokohama, Japan, January 2021.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/w43.pdf">PDF</a>
+				
+				<br>&nbsp;
+			
+				</p></div><div class="tudelft-publication tudelft-publication-journal"><h6>Piao,&nbsp;L.; de Vries,&nbsp;L.; de Weerdt,&nbsp;M.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/j30.pdf"><h5><b>Electricity Markets for DC Distribution Systems: Locational Pricing Trumps Wholesale Pricing</b></h5></a><p>
+				Energy, <b>214</b>, January 2021.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/j30.pdf">PDF</a>   &nbsp; 
+				
+			
+				</p><p></p><p></p></div></div><div class="tudelft-year"><h3>2020</h3><div class="tudelft-publication tudelft-publication-journal"><h6>Wallace,&nbsp;M. and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/j29.pdf"><h5><b>A New Constraint Programming Model and Solving for the Cyclic Hoist Scheduling Problem</b></h5></a><p>
+				Constraints, <b>25(3-4)</b>, November 2020.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/j29.pdf">PDF</a>   
+				
+				<br>&nbsp;
+			
+				</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Gevers,&nbsp;L. and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/cs15.pdf"><h5>Cooperation in Harsh Environments: The Effects of Noise in Iterated Prisoner's Dilemma</h5></a><p>
+				Proceedings of the 32th Benelux Conference on Artificial Intelligence (BNAIC'20),
+				Leiden, Netherlands, November 2020.  <b>Best Student Paper award</b>
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/cs15.pdf">PDF</a> 
+				
+				<br>&nbsp;    
+			
+				</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Miglani,&nbsp;M. and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/w42.pdf"><h5>NLtoPDDL: One-Shot Learning of PDDL Models from Natural Language Process Manuals</h5></a><p>
+				Proceedings of the ICAPS'20 Workshop on Knowledge Engineering for Planning and Scheduling,
+				Nancy, France, October 2020.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/w42.pdf">PDF</a> 
+				
+				<br>&nbsp;
+			
+				</p></div><div class="tudelft-publication"><h6>Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/r29.pdf"><h5>Responsible Artificial Intelligence (book review)</h5></a><p>
+				Prometheus, <b>36(3)</b>, September 2020.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/r29.pdf">PDF</a> 
+				
+				<br>&nbsp;
+				
+				</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Wallace,&nbsp;M. and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/c26.pdf"><h5><b>A New Constraint Programming Model and Solving for the Cyclic Hoist Scheduling Problem</b></h5></a><p>
+				Proceedings of the 17th International Conference on the Integration of Constraint Programming, Artificial Intelligence, and Operations Research (CPAIOR'20).
+				Vienna, Austria, September 2020.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/c26.pdf">PDF</a>
+				&nbsp;<span class="tudelft-copyright">©2020 Springer</span>
+				
+				<br>&nbsp;
+			
+			<!--    
+				</li><li>Thorbjarnarson,&nbsp;T. and Yorke-Smith,&nbsp;N.
+				<em>On Training Neural Networks with Mixed Integer Programming</em>.
+				Arxiv preprint <a
+				href="http://arxiv.org/abs/2009.03825">2009.03825</a>, September 2020.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/r29.pdf">PDF</a> &nbsp;<br />
+				<span class="explain">Learns a neural network using MIP, with more data than previous MIP approaches.</span>
+				<br>&nbsp;
+			-->    
+			
+				</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>van Driel,&nbsp;R. and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/w41.pdf"><h5>Towards Unsatisfiable Core Learning for Chuffed</h5></a><p>
+				Presented at: CP'20 Workshop on Progress Towards the Holy Grail.
+				Louvain-la-Neuve, Belgium, September 2020.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/w41.pdf">PDF</a> 
+				
+				<br>&nbsp;
+				
+				</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Saur,&nbsp;R.; La Poutre,&nbsp;H; and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/c25.pdf"><h5>Towards Optimal Demand-Side Bidding in Parallel Auctions for Time-Shiftable Electrical Loads</h5></a><p>
+				Proceedings of the 18th IEEE International Conference on Industrial Informatics (INDIN'20).
+				Warwick, UK, July 2020.
+				&nbsp;<a href="http://homepage.tudelft.nl/0p6y8/papers/c25.pdf">PDF</a> &nbsp;<span class="tudelft-copyright">©2020 IEEE</span>
+				
+				<br>&nbsp;    
+			
+			<!--    
+				</li><li>Yilmaz,&nbsp;K. and Yorke-Smith,&nbsp;N.
+				<em>Learning Efficient Search Approximation in Mixed Integer Branch and Bound</em>.
+				Arxiv preprint <a
+				href="http://arxiv.org/abs/2007.03948">2007.03948</a>, July 2020.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/r28.pdf">PDF</a> &nbsp;<br>
+				<span class="explain">Shows how a learned policy can replicate standard MIP node selection heuristics.</span>
+				<br>&nbsp;
+			-->
+				
+			<!--    
+				</li><li>Fisher,&nbsp;M.; Mascardi,&nbsp;V.; Rozier,&nbsp;K.&nbsp;Y.; Schlingloff,&nbsp;H.; Winikoff,&nbsp;M.; and Yorke-Smith;&nbsp;N.
+				<em>Towards a Framework for Certification of Reliable Autonomous Systems</em>.
+				Arxiv preprint <a href="http://arxiv.org/abs/2001.09124">2001.0912</a>, January 2020.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/r26.pdf">PDF</a>  <a href="https:/doi.org/10.1007/s10845-019-01518-4">DOI</a> &nbsp;<br>
+				<span class="explain">Argues for why autonomous systems need certification.  Appears in <em>Autonomous Agents and Multiagent Systems</em> journal.</span>
+				<br>&nbsp;
+			-->
+				
+				</p></div><div class="tudelft-publication tudelft-publication-journal"><h6>He,&nbsp;L.; de Weerdt,&nbsp;M.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/j28.pdf"><h5><b>Time/Sequence-Dependent Scheduling: The Design and Evaluation of a General Tabu-Based Adaptive Large Neighbourhood Search Algorithm</b></h5></a><p>
+				Journal of Intelligent Manufacturing, <b>31</b>, April 2020.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/j28.pdf">PDF</a>   &nbsp;
+				
+			
+				</p><p></p><p></p></div></div><div class="tudelft-year"><h3>2019</h3><div class="tudelft-publication tudelft-publication-journal"><h6>He,&nbsp;L.; Guijt,&nbsp;A.; de Weerdt,&nbsp;M.; Xing,&nbsp;L.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/j27.pdf"><h5><b>Order Acceptance and Scheduling with Sequence-dependent Setup Times: A New Memetic Algorithm and Benchmark of the State of the Art</b></h5></a><p>
+				Computers &amp; Industrial Engineering, <b>138</b>, December 2019.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/j27.pdf">PDF</a>   &nbsp;
+			<!--    <a href="https://arxiv.org/abs/1910.01982">Abstract</a> |-->
+				<span class="tudelft-copyright">©2019 Elsevier</span>
+				
+				<br>&nbsp;
+			
+				</p></div><div class="tudelft-publication"><h6>Chappin,&nbsp;E.&nbsp;J.&nbsp;L.; Nikolic,&nbsp;I.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/bc10.pdf"><h5>Agent-Based Modelling of the Social Dynamics of Energy End-Use</h5></a><p>
+				Energy and Behaviour: Challenges of a Low-Carbon Future.
+				Academic Press, November 2019.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/bc10.pdf">PDF</a>   &nbsp;
+				<span class="tudelft-copyright">©2019 Elsevier</span>
+				
+				<br>&nbsp;
+				
+				</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Saur,&nbsp;R.; Yorke-Smith,&nbsp;N.; and La Poutre,&nbsp;H.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/c24.pdf"><h5>Combined Heat and Power Markets by Double-Sided Auction Mechanisms</h5></a><p>
+				Proceedings of the 9th IEEE PES Innovative Smart Grid Technologies Europe Conference (ISGT-Europe'19). Bucharest, Romania, September-October 2019.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/c24.pdf">PDF</a>   &nbsp;
+				<span class="tudelft-copyright">©2019 IEEE</span>
+				
+				<br>&nbsp;
+			
+				</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Piao,&nbsp;L.; de Vries,&nbsp;L.; de Weerdt,&nbsp;M.; and
+			Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/c23.pdf"><h5>Markets for Direct Current Distribution Systems: Towards Energy-based vs. Flex-based Designs</h5></a><p>
+				Proceedings of the 16th International Conference on the European Energy Market (EEM'19).  Ljubljana, Slovenia, September 2019.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/c23.pdf">PDF</a> &nbsp;
+				<span class="tudelft-copyright">©2019 IEEE</span>
+				
+				<br>&nbsp;
+				
+				</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Jonker,&nbsp;T.; Duinkerken,&nbsp;M.&nbsp;B.; Yorke-Smith,&nbsp;N.; de Waal,&nbsp;A.; and Negenborn,&nbsp;R.&nbsp;R.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/j26.pdf"><h5><b>Coordinated Optimization of Equipment Operations on a Container Terminal</b></h5></a><p>
+				Flexible Services and Manufacturing Journal, July 2019.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/j26.pdf">PDF</a>   &nbsp; 
+				
+				<br>&nbsp;
+			  
+				</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Hofstede,&nbsp;G.&nbsp;J.; Jonker,&nbsp;C.&nbsp;M.; Verwaart,&nbsp;T.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/j25.pdf"><h5><b>The Lemon Car Game Across Cultures: Evidence of Relational Rationality</b></h5></a><p>
+				Group Decision and Negotiation, July 2019.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/j25.pdf">PDF</a>   &nbsp; 
+				
+				<br>&nbsp;
+				  
+				</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>He,&nbsp;L.; de Weerdt,&nbsp;M.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/c22.pdf"><h5><b>Tabu-Based Large Neighbourhood Search for Time/Sequence-Dependent Scheduling Problems with Time Windows</b></h5></a><p>
+				Proceedings of the 29th International Conference on Automated Planning and Scheduling (ICAPS'19). Berkeley, CA, July 2019.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/c22.pdf">PDF</a> &nbsp; 
+				
+				<br>&nbsp;
+			
+				</p></div><div class="tudelft-publication tudelft-publication-journal"><h6>Piao,&nbsp;L.; de Vries,&nbsp;L.; de Weerdt,&nbsp;M.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/j24.pdf"><h5><b>Electricity Markets for DC Distribution Systems: Design Options</b></h5></a><p>
+				Energies, <b>12</b>, July 2019.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/j24.pdf">PDF</a>   &nbsp; 
+				
+				<br>&nbsp;
+			
+				</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Wallace,&nbsp;M. and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/j24.pdf"><h5>Cyclic Hoist Scheduling: Experiments with Modern Solvers</h5></a><p>
+				Presented at: 16th International Conference on the Integration of Constraint Programming, Artificial Intelligence, and Operations Research (CPAIOR'19).
+				Thessaloniki, Greece, June 2019.
+				
+				
+				<br>&nbsp;
+			
+				</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Ziengs,&nbsp;A.&nbsp;H. and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/w40.pdf"><h5>Hot Housing: A Study of Bidding Strategies in the Dutch Urban Residential Market</h5></a><p>
+				Working Notes of AAMAS'19 Workshop on Agent Based Modelling of Urban Systems, Montreal, Canada, May 2019.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/w40.pdf">PDF</a>&nbsp; 
+				
+				<br>&nbsp;
+				
+				</p></div><div class="tudelft-publication tudelft-publication-journal"><h6>Telang,&nbsp;P.; Singh,&nbsp;M.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/j23.pdf"><h5><b>A Coupled Operational Semantics for Goals and Commitments</b></h5></a><p>
+				Journal of Artificial Intelligence Research, <b>65</b>, May 2019.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/j23.pdf">PDF</a>   &nbsp; 
+				
+			
+				</p><p></p><p></p></div></div><div class="tudelft-year"><h3>2018</h3><div class="tudelft-publication tudelft-publication-journal"><h6>Dastani,&nbsp;M.; Torroni,&nbsp;P.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/j22.pdf"><h5><b>Monitoring Norms: A Multi-Disciplinary Perspective</b></h5></a><p>
+				The Knowledge Engineering Review, <b>33</b>, December 2018.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/j22.pdf">PDF</a>   &nbsp; 
+				
+				<br>&nbsp;
+				
+				</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>van Tilburg,&nbsp;J. and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/cs13.pdf"><h5>Strategies for the Iterated Prisoner's Dilemma in a Natural Environment</h5></a><p>
+				Proceedings of the 30th Benelux Conference on Artificial Intelligence (BNAIC'18),
+				's-Hertogenbosch, Netherlands, November 2018.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/cs13.pdf">PDF</a> <!--  <a href="http://dx.doi.org/10.1007/s10115-016-1011-3">DOI</a> &nbsp; -->  
+				
+				<br>&nbsp;
+			
+				</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/a7.pdf"><h5>GoCo: Planning Expressive Commitment Protocols (journal abstract)</h5></a><p>
+				Presented at: 30th Benelux Conference on Artificial Intelligence (BNAIC'18).
+				's-Hertogenbosch, Netherlands, November 2018.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/a7.pdf">PDF</a> <!--  <a href="http://dx.doi.org/10.1007/s10115-016-1011-3">DOI</a> &nbsp; -->  
+				
+				<br>&nbsp;
+			  
+				</p></div><div class="tudelft-publication"><h6>Hugtenburg,&nbsp;S. and Yorke-Smith,&nbsp;N.
+				</h6><a href="https://textbooks.open.tudelft.nl/index.php/textbooks/catalog/book/13/"><h5>Delftse Foundations of Computation</h5></a><p>
+				TU Delft Open Textbook, August 2018.  ISBN 978-94-6366-083-9.
+				&nbsp; <!-- <a href="http://homepage.tudelft.nl/0p6y8/papers/z6.pdf">PDF</a> --> <a href="https://textbooks.open.tudelft.nl/index.php/textbooks/catalog/book/13/">PDF</a>   &nbsp; 
+				
+				<br>&nbsp;
+			  
+				</p></div><div class="tudelft-publication tudelft-publication-journal"><h6>Meneguzzi,&nbsp;F.; Magnaguagno,&nbsp;M.&nbsp;C.; Singh,&nbsp;M.&nbsp;P.; Telang,&nbsp;P.&nbsp;R.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/j21.pdf"><h5><b>GoCo: Planning Expressive Commitment Protocols</b></h5></a><p>
+				Autonomous Agents and Multi-Agent Systems, <b>32(4)</b>, July 2018.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/j21.pdf">PDF</a>   &nbsp; 
+				
+			<br>&nbsp;    
+				
+				</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Srour,&nbsp;F.&nbsp;J. and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/c21.pdf"><h5><b>On Collusion and Coercion: Agent Interconnectedness and In-Group Behaviour</b></h5></a><p>
+				Proceedings of the 17th International Conference on Autonomous Agents and Multiagent Systems (AAMAS'18), Stockholm, Sweden, July 2018.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/c21.pdf">PDF</a>&nbsp;
+				<span class="tudelft-copyright">©2018 IFAAMAS</span>
+				
+				<br>&nbsp;
+			
+				</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Picascia,&nbsp;S.; Termos,&nbsp;A.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/cs12.pdf"><h5><b>Initial Results from an Agent-Based Simulation of Housing in Urban Beirut</b></h5></a><p>
+				Proceedings of 17th International Conference on Autonomous Agents and Multiagent Systems (AAMAS'18), Stockholm, Sweden, July 2018.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/cs12.pdf">PDF</a>&nbsp;
+				<span class="tudelft-copyright">©2018 IFAAMAS</span>
+				
+				<br>&nbsp;
+			
+				</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Piao,&nbsp;L.; de Vries,&nbsp;L.; de Weerdt,&nbsp;M.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/c20.pdf"><h5>Electricity Market for Direct Current Distribution Systems: Exploring the Design Space</h5></a><p>
+				Proceedings of the 15th International Conference on the European Energy Market (EEM'18), Lodz, Poland, June 2018.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/c20.pdf">PDF</a> 
+				
+				<br>&nbsp;
+				
+				</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>He,&nbsp;L.; de Weerdt,&nbsp;M.; Yorke-Smith,&nbsp;N.; Liu,&nbsp;X.; and Chen,&nbsp;Y.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/w38.pdf"><h5>Tabu-Based Large Neighbourhood Search for Time-Dependent Multi-Orbit Agile Satellite Scheduling</h5></a><p>
+				Proceedings of the ICAPS'18 Scheduling and Planning Applications Workshop, Delft, The Netherlands, June 2018.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/w38.pdf">PDF</a> 
+				
+				<br>&nbsp;
+			
+				</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/w37.pdf"><h5>On Learning from Human Expert Knowledge for Automated Scheduling</h5></a><p>
+				Proceedings of the ICAPS'18 Workshop Knowledge Engineering for Planning and Scheduling, Delft, The Netherlands, June 2018.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/w37.pdf">PDF</a> 
+				
+				<br>&nbsp;
+			
+				</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/a5.pdf"><h5>Evaluating a Knowledge-Based Scheduling Assistant (journal abstract)</h5></a><p>
+				Presented at: ICAPS'18 Workshop Knowledge Engineering for Planning and Scheduling, Delft, The Netherlands, June 2018.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/a5.pdf">PDF</a> 
+				
+				<br>&nbsp;
+			
+				</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Srour,&nbsp;F.&nbsp;J. and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/bc9.pdf"><h5>An Initial Study of Agent Interconnectedness and In-Group Behaviour</h5></a><p>
+				Post-proceedings of AAMAS'17 Workshop on Multi-Agent-Based Simulation, LNCS 10798, Springer, May 2018.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/bc9.pdf">PDF</a>   &nbsp; 
+				<span class="tudelft-copyright">©2018 Springer</span> 
+				
+				<br>&nbsp;
+				
+				</p></div><div class="tudelft-publication"><h6>Roberts,&nbsp;M.; Borrajo,&nbsp;D.; Cox,&nbsp;M.; and Yorke-Smith,&nbsp;N. (eds).
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/bc9.pdf"></a><h5><a href="http://homepage.tudelft.nl/0p6y8/papers/bc9.pdf"></a><a href="https://content.iospress.com/journals/ai-communications/31/2">Special Issue on Goal Reasoning</a></h5><p>
+				AI Communications, <b>31(2)</b>, March 2018.
+				&nbsp; <!-- <a href="http://homepage.tudelft.nl/0p6y8/papers/n120.pdf">PDF</a>  -->  &nbsp; 
+				<span class="tudelft-copyright">©2018 IOS Press</span>
+				
+			
+			  </p><p></p><p></p></div></div><div class="tudelft-year"><h3>2017</h3><div class="tudelft-publication tudelft-publication-conference"><h6>Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/a4.pdf"><h5>Evaluating Intelligent Knowledge Systems (journal abstract)</h5></a><p>
+				Presented at: 29th Benelux Conference on Artificial Intelligence (BNAIC'17).
+				Groningen, Netherlands, November 2017.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/a4.pdf">PDF</a> <!--  <a href="http://dx.doi.org/10.1007/s10115-016-1011-3">DOI</a> &nbsp; -->  
+				
+				<br>&nbsp;
+			  
+				</p></div><div class="tudelft-publication tudelft-publication-journal"><h6>Berry,&nbsp;P.; Donneau-Golencer,&nbsp;T.; Duong,&nbsp;K.; Gervasio,&nbsp;M.; Peintner,&nbsp;B.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/j20.pdf"><h5><b>Evaluating Knowledge Systems: Experiences with a User-Adaptive Intelligent Agent</b></h5></a><p>
+				Knowledge and Information Systems, <b>52(2)</b>, August 2017.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/j20.pdf">PDF</a>   &nbsp; 
+				<span class="tudelft-copyright">©2017 Springer</span> 
+				
+				<br>&nbsp;
+					
+				</p></div><div class="tudelft-publication tudelft-publication-journal"><h6>Logan&nbsp;B.; Thangarajah,&nbsp;J.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/c19.pdf"><h5><b>Progressing Intention Progression: A Call for a Goal-Plan Tree Contest</b></h5></a><p>
+				Proceedings of 16th International Conference on Autonomous Agents and Multiagent Systems (AAMAS'17), Sao Paulo, Brazil, May 2017. <b>Best Blue Sky Paper award</b>
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/c19.pdf">PDF</a> &nbsp;
+				<span class="tudelft-copyright">©2017 IFAAMAS</span>
+				
+				<br>&nbsp;
+			
+				</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Srour,&nbsp;F.&nbsp;J. and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/w36.pdf"><h5>On Collusion and Coercion: A Study of Agent Interconnectedness and In-Group Behaviour</h5></a><p>
+				Working Notes of AAMAS'17 Workshop on Multi-Agent-Based Simulation, Sao Paulo, Brazil, May 2017.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/w36.pdf">PDF</a>&nbsp; 
+				
+				<br>&nbsp;
+			
+				</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Picascia,&nbsp;S.; Termos,&nbsp;A.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/w35.pdf"><h5>Towards Data-Driven Agent-Based Simulation: A Case Study of West Asian Urban Dynamics</h5></a><p>
+				Working Notes of AAMAS'17 Workshop on Agent Based Modelling of Urban Systems, Sao Paulo, Brazil, May 2017.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/w35.pdf">PDF</a>&nbsp; 
+				
+				<br>&nbsp;
+				
+				</p></div><div class="tudelft-publication tudelft-publication-journal"><h6>Thangarajah,&nbsp;J.; Harland,&nbsp;J.; Morley,&nbsp;D.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/j19.pdf"><h5><b>Aborting, Suspending, and Resuming Goals and Plans in Intelligent Agents</b></h5></a><p>
+				Autonomous Agents and Multi-Agent Systems, <b>31(2)</b>, March 2017.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/j19.pdf">PDF</a>   &nbsp; 
+				
+				<br>&nbsp;
+				
+				</p></div><div class="tudelft-publication tudelft-publication-journal"><h6>Dastani,&nbsp;M.; van der Torre,&nbsp;L.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/j18.pdf"><h5><b>Commitments and Interaction Norms in Organisations</b></h5></a><p>
+				Autonomous Agents and Multi-Agent Systems, <b>31(2)</b>, March 2017.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/j18.pdf">PDF</a>   &nbsp; 
+				
+				<br>&nbsp;
+			
+				</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Picascia,&nbsp;S. and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/bc8.pdf"><h5>Towards an Agent-Based Simulation of Housing in Urban Beirut</h5></a><p>
+				Post-proceedings of AAMAS'16 Workshop on Agent Based Modelling of Urban Systems, LNCS 10051, Springer, January 2017.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/bc8.pdf">PDF</a>   &nbsp; 
+				<span class="tudelft-copyright">©2017 Springer</span> 
+				
+			
+				</p><p></p><p></p></div></div><div class="tudelft-year"><h3>2016</h3><div class="tudelft-publication tudelft-publication-journal"><h6>Guo,&nbsp;G.; Zhang,&nbsp;J.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/j17.pdf"><h5><b>A Novel Recommendation Model Regularized with User Trust and Item Ratings</b></h5></a><p>
+				IEEE Transactions on Knowledge and Data Engineering, <b>28(7)</b>, July 2016.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/j17.pdf">PDF</a>   &nbsp;
+				<span class="tudelft-copyright">©2016 IEEE</span> 
+				
+				<br>&nbsp;
+			
+				</p></div><div class="tudelft-publication tudelft-publication-journal"><h6>Guo,&nbsp;G., Zhang,&nbsp;J., and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/j16.pdf"><h5><b>A Novel Evidence-based Bayesian Similarity Measure for Recommender Systems</b></h5></a><p>
+				ACM Transactions on the Web, <b>10(2)</b>, May 2016. 
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/j16.pdf">PDF</a>   &nbsp; 
+				<span class="tudelft-copyright">©2016 ACM</span>
+				
+				<br>&nbsp;
+			
+				</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Srour,&nbsp;F.&nbsp;J. and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/c18.pdf"><h5><b>Assessing Maritime Customs Process Re-Engineering using Agent-Based Simulation</b></h5></a><p>
+				Proceedings of 15th International Conference on Autonomous Agents and Multiagent Systems (AAMAS'16), Singapore, May 2016.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/c18.pdf">PDF</a> &nbsp; 
+				<span class="tudelft-copyright">©2016 IFAAMAS</span>
+				
+				<br>&nbsp;
+			
+				</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Picascia,&nbsp;S. and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/w34.pdf"><h5>Migration, Refugees, and Urban Dynamics: Towards an Agent-Based Simulation of Housing in Urban Beirut</h5></a><p>
+				Working Notes of AAMAS'16 Workshop on Agent Based Modelling of Urban Systems, Singapore, May 2016.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/w34.pdf">PDF</a>&nbsp; 
+				
+				
+				</p><p></p><p></p></div></div><div class="tudelft-year"><h3>2015</h3><div class="tudelft-publication"><h6>Dechesne,&nbsp;F.; Ghorbani,&nbsp;A.; and Yorke-Smith,&nbsp;N. (eds).
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n120.pdf"></a><h5><a href="http://homepage.tudelft.nl/0p6y8/papers/n120.pdf"></a><a href="http://link.springer.com/article/10.1007/s00146-014-0535-x">Special Issue on Agent-Based Modelling for Policy Engineering</a></h5><p>
+				AI &amp; Society, <b>30(3)</b>, August 2015.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n120.pdf">PDF</a>   &nbsp; 
+				<span class="tudelft-copyright">©2014 Springer</span>
+				
+			<br>&nbsp;
+			
+				</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Guo,&nbsp;G.; Zhang&nbsp;J.; Sun,&nbsp;Z.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n119.pdf"><h5>LibRec: A Java Library for Recommender Systems</h5></a><p>
+				Proceedings of 23rd International Conference on User Modelling, Adaptation and Personalization (UMAP'15), Demonstration Track.
+				Dublin, Ireland. July 2015.    
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n119.pdf">PDF</a> &nbsp; 
+				
+			<br>&nbsp;    
+				
+				</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Meneguzzi,&nbsp;F.; Telang, P.&nbsp;R.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n118.pdf"><h5><b>Towards Planning Uncertain Commitment Protocols</b></h5></a><p>
+				Proceedings of 14th International Conference on Autonomous Agents and Multiagent Systems (AAMAS'15), Istanbul, Turkey, May 2015.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n118.pdf">PDF</a> &nbsp; 
+				<span class="tudelft-copyright">©2015 IFAAMAS</span>
+				
+			<br>&nbsp;    
+				
+				</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Harland,&nbsp;J.; Thangarajah,&nbsp;J.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n117.pdf"><h5><b>Estimating the Progress of Maintenance Goals</b></h5></a><p>
+				Proceedings of 14th International Conference on Autonomous Agents and Multiagent Systems (AAMAS'15), Istanbul, Turkey, May 2015.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n117.pdf">PDF</a> &nbsp;
+				<span class="tudelft-copyright">©2015 IFAAMAS</span>
+				
+			<br>&nbsp;    
+				
+				</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Srour,&nbsp;F.&nbsp;J. and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n116.pdf"><h5><b>Towards Agent-Based Simulation of Maritime Customs</b></h5></a><p>
+				Proceedings of 14th International Conference on Autonomous Agents and Multiagent Systems (AAMAS'15), Istanbul, Turkey, May 2015.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n116.pdf">PDF</a> &nbsp; 
+				<span class="tudelft-copyright">©2015 IFAAMAS</span>
+				
+			<br>&nbsp;    
+			
+				</p></div><div class="tudelft-publication tudelft-publication-journal"><h6>Chaudhri,&nbsp;V.; Heymans,&nbsp;S.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n115.pdf"><h5><b>Reasoning About Interruption of Biological Processes</b></h5></a><p>
+				Biologically Inspired Cognitive Architectures, <b>12</b>, April 2015.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n115.pdf">PDF</a>   &nbsp; 
+				<span class="tudelft-copyright">©2015 Elsevier</span>
+				
+			<br>&nbsp;    
+			
+				</p></div><div class="tudelft-publication tudelft-publication-journal"><h6>Guo,&nbsp;G.; Zhang,&nbsp;J.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n114.pdf"><h5><b>Leveraging Multiviews of Trust and Similarity to Enhance Clustering-based Recommender Systems</b></h5></a><p>
+				Knowledge-Based Systems, <b>74</b>, January 2015.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n114.pdf">PDF</a>   &nbsp; 
+				<span class="tudelft-copyright">©2014 Elsevier</span>
+				
+			<br>&nbsp;
+			
+				</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Guo,&nbsp;G.; Zhang,&nbsp;J.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n113.pdf"><h5><b>TrustSVD: Collaborative Filtering with Both the Explicit and Implicit Influence of User Trust and of Item Ratings</b></h5></a><p>
+				Proceedings of 29th AAAI Conference on Artificial Intelligence (AAAI'15), Austin, TX, January 2015.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n113.pdf">PDF</a> &nbsp; 
+				
+				
+				  </p><p></p><p></p></div></div><div class="tudelft-year"><h3>2014</h3><div class="tudelft-publication tudelft-publication-journal"><h6>Chaudhri,&nbsp;V.&nbsp;K.; Elenius,&nbsp;D.; Goldenkranz,&nbsp;A.; Gong,&nbsp;A.; Martone,&nbsp;M.; Webb,&nbsp;W.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/j13.pdf"><h5><b>Comparative Analysis of Knowledge Representation and Reasoning Requirements across a Range of Life Sciences Textbooks</b></h5></a><p>
+				Journal of Biomedical Semantics, <b>5</b>, December 2014.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/j13.pdf">PDF</a>   &nbsp; 
+				
+			<br>&nbsp;
+			  
+				</p></div><div class="tudelft-publication tudelft-publication-journal"><h6>Guo,&nbsp;G.; Zhang,&nbsp;J.; Thalmann,&nbsp;D.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n111.pdf"><h5><b>Leveraging Prior and Posterior Ratings for Recommender Systems in E-Commerce</b></h5></a><p>
+				Electronic Commerce Research and Applications, <b>13(6)</b>, November-December 2014.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n111.pdf">PDF</a>   &nbsp; 
+				<span class="tudelft-copyright">©2014 Elsevier</span>
+				
+			<br>&nbsp;
+			
+				</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Guo,&nbsp;G.; Zhang,&nbsp;J.; Thalmann,&nbsp;D.; Basu,&nbsp;A.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n110.pdf"><h5><b>ETAF: An Extended Trust Antecedents Framework for Trust Prediction</b></h5></a><p>
+				Proceedings of 6th IEEE/ACM International Conference on Social Networks Analysis and Mining (ASONAM'14), Beijing, China, August 2014.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n110.pdf">PDF</a> &nbsp; 
+				
+			<br>&nbsp;
+				
+				</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Thangarajah,&nbsp;J.; Harland,&nbsp;J.; Morley,&nbsp;D.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n109.pdf"><h5><b>Quantifying the Completeness of Goals in BDI Agent</b></h5></a><p>
+				Proceedings of 21st European Conference on Artificial Intelligence (ECAI'14), Prague, Czech Republic, August 2014.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n109.pdf">PDF</a> &nbsp; 
+				
+			<br>&nbsp;    
+			
+			  </p></div><div class="tudelft-publication tudelft-publication-journal"><h6>Harland,&nbsp;J.; Morley,&nbsp;D.; Thangarajah,&nbsp;J.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n108.pdf"><h5><b>An Operational Semantics for the Goal Life-Cycle in BDI Agents</b></h5></a><p>
+				Autonomous Agents and Multi-Agent Systems, <b>28(4)</b>, July 2014.
+				&nbsp; <!-- <a href="http://homepage.tudelft.nl/0p6y8/papers/n108.html">Abstract</a>  --> <a href="http://homepage.tudelft.nl/0p6y8/papers/n108.pdf">PDF</a> |  &nbsp; 
+				
+			<br>&nbsp;    
+			
+				</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Thangarajah,&nbsp;J.; Harland,&nbsp;J.; Morley,&nbsp;D.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n107.pdf"><h5><b>Towards Quantifying the Completeness of Goals in BDI Agent</b></h5></a><p>
+				Proceedings of 13th International Conference on Autonomous Agents and Multiagent Systems (AAMAS'14), Paris, France, May 2014.
+				&nbsp; <!-- <a href="http://homepage.tudelft.nl/0p6y8/papers/n107.html">Abstract</a>  --> <a href="http://homepage.tudelft.nl/0p6y8/papers/n107.pdf">PDF</a> &nbsp; 
+				<span class="tudelft-copyright">©2014 IFAAMAS</span>
+				
+			<br>&nbsp;    
+			
+				</p></div><div class="tudelft-publication"><h6>Guo,&nbsp;G.; Zhang,&nbsp;J.; Thalmann,&nbsp;D.; Basu,&nbsp;A.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n106.pdf"><h5>From Ratings to Trust: an Empirical Study of Implicit Trust in Recommender Systems</h5></a><p>
+				Proceedings of 29th ACM Symposium on Applied Computing (SAC'14), Gyeongju, Korea, March 2014.
+				&nbsp; <!-- <a href="http://homepage.tudelft.nl/0p6y8/papers/n106.html">Abstract</a>  --> <a href="http://homepage.tudelft.nl/0p6y8/papers/n106.pdf">PDF</a> &nbsp; 
+				
+			
+				</p><p></p><p></p></div></div><div class="tudelft-year"><h3>2013</h3><div class="tudelft-publication tudelft-publication-conference"><h6>Guo,&nbsp;G.; Zhang,&nbsp;J.; Thalmann,&nbsp;D.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n105.pdf"><h5><b>Prior Ratings: A New Information Source for Reccomender Systems in E-Commerce</b></h5></a><p>
+				Proceedings of 7th ACM Recommender Systems Conference (RecSys'13),
+				Hong Kong, China, October 2013.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n105.pdf">PDF</a> &nbsp; 
+				
+				<!-- http://dx.doi.org/10.1145/2507157.2507200 -->
+			<br>&nbsp;
+			
+				</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Chung,&nbsp;K.&nbsp;S.&nbsp;K.; Komashie,&nbsp;A.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n104.pdf"><h5>Envisioning Complexity in Healthcare Systems using Discrete Event Simulation and Social Network Analysis</h5></a><p>
+				Proceedings of 5th IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM'13), Demonstration Track.
+				Niagara Falls, Canada. August 2013.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n104.pdf">PDF</a> &nbsp; 
+				
+			<br>&nbsp;
+				
+				</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Guo,&nbsp;G.; Zhang,&nbsp;J.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n103.pdf"><h5><b>A Novel Bayesian Similarity Measure for Recommender
+				Systems</b></h5></a><p>
+				Proceedings of 23rd International Joint Conference on Artificial Intelligence (IJCAI'13),
+				Beijing, China, August 2013.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n103.pdf">PDF</a> &nbsp; 
+				
+			<br>&nbsp;
+			
+				</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Yorke-Smith,&nbsp;N.; Heymans,&nbsp;S.; and Chaudhri,&nbsp;V.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n102.pdf"><h5><b>Responding to Hypothetical Questions in an Intelligent Tutoring Agent</b></h5></a><p>
+				Proceedings of 12th International Conference on Autonomous Agents and Multiagent Systems (AAMAS'13), 
+				Saint Paul, MN, May 2013.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n102.pdf">PDF</a> &nbsp;
+				<span class="tudelft-copyright">©2013 IFAAMAS</span>
+				
+			<br>&nbsp;
+			
+				</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Dastani,&nbsp;M.; van der Torre,&nbsp;L.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n101.pdf"><h5>Monitoring Interaction in Organisation</h5></a><p>
+				Post-proceedings of AAMAS'12 Workshop on Coordination, Organization, Institutions and Norms (COIN'12), LNCS 7756, Springer, April 2013.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n101.pdf">PDF</a> &nbsp;
+				<span class="tudelft-copyright">©2013 Springer</span> 
+				
+			</p><p></p><p></p></div></div><div class="tudelft-year"><h3>2012</h3><div class="tudelft-publication"><h6>Telang,&nbsp;P.&nbsp;R.; Yorke-Smith,&nbsp;N.; and Singh,&nbsp;M.&nbsp;P.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n100.pdf"><h5>Relating Goals and Commitment Semantics</h5></a><p>
+				Post-proceedings of ProMAS'11, LNCS 7217, Springer, October 2012.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n100.pdf">PDF</a> &nbsp;
+				<span class="tudelft-copyright">©2012 Springer</span> 
+				
+			<br>&nbsp;
+			  
+				</p></div><div class="tudelft-publication tudelft-publication-journal"><h6>Kwong,&nbsp;H. and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n99.pdf"><h5><b>Detection of Imperative and Declarative Question-Answer Pairs in Email Conversations</b></h5></a><p>
+				AI Communications, <b>25(4)</b>, September 2012.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n99.pdf">PDF</a> 
+				 &nbsp;
+				<span class="tudelft-copyright">©2012 IOS Press</span> 
+				
+			<br>&nbsp;
+			
+				</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Chaudhri,&nbsp;V.; Heymans,&nbsp;S.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n98.pdf"><h5>Process Interruption Reasoning</h5></a><p>
+				Proceedings of QR'12 Workshop on Deep Knowledge Representation Challenge.
+				Playa Vista, CA, July 2012.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n98.pdf">PDF</a> &nbsp; 
+				
+			<br>&nbsp;
+				
+				</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Dastani,&nbsp;M.; van der Torre,&nbsp;L.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n97.pdf"><h5><b>A Programming Approach to Monitoring Communication in an Organisational Environment</b></h5></a><p>
+				 Proceedings of 11th International Conference on Autonomous Agents and Multiagent Systems (AAMAS'12), 
+				Valencia, Spain, June 2012.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n97.pdf">PDF</a> &nbsp;
+				<span class="tudelft-copyright">©2012 IFAAMAS</span>
+				
+			<br>&nbsp;
+				
+				</p></div><div class="tudelft-publication"><h6>van Riemsdijk,&nbsp;M.&nbsp;B. and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n95.pdf"><h5>Towards Reasoning with Partial Goal Satisfaction in Intelligent Agents</h5></a><p>
+				Post-proceedings of ProMAS'10, LNCS 6599, Springer, April 2012.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n95.pdf">PDF</a> &nbsp; 
+				<span class="tudelft-copyright">©2012 Springer</span> 
+				
+			<br>&nbsp;
+			
+				</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Harb,&nbsp;H.; Srour,&nbsp;F.&nbsp;J.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n94.pdf"><h5>A Case Study in Model Selection for Policy Engineering: Simulating Maritime Customs</h5></a><p>
+				<!--In: Deschesne, F.; Hattori, H.; ter Mors, A.; Such, J. M.; Weyns, D.; and Dignum, F. (Eds).-->
+				Advanced Agent Technology: Post-proceedings of the AAMAS'11 Workshops, LNCS 7068, Springer, February 2012.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n94.pdf">PDF</a> &nbsp; 
+				<span class="tudelft-copyright">©2012 Springer</span> 
+				
+			<br>&nbsp;
+				
+			</p></div><div class="tudelft-publication tudelft-publication-journal"><h6>Yorke-Smith,&nbsp;N.; Saadati,&nbsp;S.; Myers,&nbsp;K.; and Morley,&nbsp;D.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n93.pdf"><h5><b>The Design of a Proactive Personal Agent for Task Management</b></h5></a><p>
+				International Journal on Artificial Intelligence Tools,
+				<b>21(1)</b>, February 2012.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n93.pdf">PDF</a> 
+				 &nbsp;
+				<span class="tudelft-copyright">©2012 World Scientific</span> 
+				
+			</p><p></p><p></p></div></div><div class="tudelft-year"><h3>2011</h3><div class="tudelft-publication tudelft-publication-journal"><h6>Berry,&nbsp;P.; Gervasio,&nbsp;M.; Peintner,&nbsp;B.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n92.pdf"><h5><b>PTIME: Personalized Assistance for Calendaring</b></h5></a><p>
+				ACM Transactions on Intelligent Systems and Technology, <b>2(4)</b>, 40:1-40:22, July 2011.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n92.pdf">PDF</a>   &nbsp;
+				<span class="tudelft-copyright">©2011 ACM</span>
+				
+			<br>&nbsp;
+			  
+			</p></div><div class="tudelft-publication"><h6>Thangarajah,&nbsp;J.; Harland,&nbsp;J.; Morley,&nbsp;D.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n90.pdf"><h5>Operational Behaviour for Executing, Suspending, and Aborting Goals in BDI Agent Systems</h5></a><p>
+				Post-proceedings of DALT'10, LNCS 6619, Springer, July 2011.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n90.pdf">PDF</a> &nbsp; 
+				<span class="tudelft-copyright">©2011 Springer</span> 
+				
+			<br>&nbsp;
+			
+			</p></div><div class="tudelft-publication"><h6>Refanidis,&nbsp;I.; Alexiadis,&nbsp;A.; and Yorke-Smith,&nbsp;N.
+			  </h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n89.pdf"><h5>Beyond Calendar Mashups: Intelligent Calendaring</h5></a><p>
+			  Proceedings of ICAPS'11 System Demonstrations, Freiburg, Germany, June 2011.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n89.pdf">PDF</a> &nbsp;
+				
+				
+			<br>&nbsp;
+			
+			</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Yorke-Smith,&nbsp;N.
+			  </h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n88.pdf"><h5>Reducing Incentives for Agent Collaboration</h5></a><p>
+			  Proceedings of AAMAS'11 Workshop on Collaborative Agents -- Research and Development,
+			  Taipei, Taiwan, May 2011.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n88.pdf">PDF</a> &nbsp;
+				
+				
+			<br>&nbsp;
+			
+			</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Telang,&nbsp;P.&nbsp;R.; Yorke-Smith,&nbsp;N.; and Singh,&nbsp;M.&nbsp;P.
+			  </h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n87.pdf"><h5>A Coupled Operational Semantics for Goals and Commitments</h5></a><p>
+			  Proceedings of AAMAS'11 Workshop on Programming Multi-Agent Systems,
+			  Taipei, Taiwan, May 2011.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n87.pdf">PDF</a> &nbsp;
+				
+				
+			<br>&nbsp;
+			
+			</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Harb,&nbsp;H.; Srour.&nbsp;F.&nbsp;J.; and Yorke-Smith,&nbsp;N.
+			  </h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n86.pdf"><h5>A Case Study in Model Selection for Policy Engineering: Simulating Maritime Customs</h5></a><p>
+			  Proceedings of AAMAS'11 Workshop on Agent-based Modeling for Policy Engineering,
+			  Taipei, Taiwan, May 2011.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n86.html">Abstract</a>
+			  <a href="http://homepage.tudelft.nl/0p6y8/papers/n86.pdf">PDF</a> &nbsp;
+				
+			<br>&nbsp;
+			
+			</p></div><div class="tudelft-publication"><h6>Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n85.pdf"><h5>The Success of Genre in Interaction Fiction</h5></a><p>
+				Jackson-Mead,&nbsp;K. and Wheeler,&nbsp;J.&nbsp;R. (ed).
+				<em>IF Theory Reader</em>.
+				&gt;&nbsp;Transcript On Press, February 2011.
+				&nbsp; 
+			  <a href="http://homepage.tudelft.nl/0p6y8/papers/n85.pdf">PDF</a> &nbsp;
+				
+			<br>&nbsp;
+			
+			</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Castillo,&nbsp;L.; Cortellessa,&nbsp;G.; and Yorke-Smith,&nbsp;N. (eds).
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n85.pdf"></a><h5><a href="http://homepage.tudelft.nl/0p6y8/papers/n85.pdf"></a><a href="http://onlinelibrary.wiley.com/doi/10.1111/coin.2011.27.issue-1/issuetoc">Special Issue on Scheduling and Planning Applications: Selected Papers from the SPARK Workshop Series</a></h5><p>
+				Computational Intelligence, <b>27(1)</b>, February 2011. &nbsp;
+				 &nbsp;
+			<span class="tudelft-copyright">©2011 Wiley</span>
+				
+			<br>&nbsp;
+			
+			</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Leigh,&nbsp;L. and Yorke-Smith,&nbsp;N.
+			  </h6><a href="file:///home/kkrle/Downloads/starlab/papers/n83.pdf"><h5>An Adaptation of the Bass New Product Diffusion Model for Multiple Purchases of Capital Items</h5></a><p>
+			  Proceedings of 10th International Marketing Trends Conference, Paris, France, January 2011.
+				&nbsp; <a href="papers/n83.pdf">PDF</a>  &nbsp; 
+				
+			</p><p></p><p></p></div></div><div class="tudelft-year"><h3>2010</h3><div class="tudelft-publication tudelft-publication-journal"><h6>Refanidis,&nbsp;I. and Yorke-Smith,&nbsp;N.
+				</h6><a href="file:///home/kkrle/Downloads/starlab/papers/n82.pdf"><h5><b>A Constraint Based Approach to Scheduling an Individual's
+			Activities</b></h5></a><p>
+				ACM Transactions on Intelligent Systems and Technology, <b>1(2)</b>, 12:1-12:32, November 2010.
+				&nbsp; <a href="papers/n82.pdf">PDF</a> &nbsp;<span class="tudelft-copyright">©2010 ACM</span> 
+			   
+			<br>&nbsp;
+			
+			</p></div><div class="tudelft-publication"><h6>Srour,&nbsp;F.&nbsp;J.; Harb,&nbsp;H.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="file:///home/kkrle/Downloads/starlab/papers/n82.pdf"><h5>Maritime Customs Negotiation with Corrupt Agents</h5></a><p>
+				Presented at: INFORMS Annual Meeting 2010, Austin, TX, November 2010.
+				&nbsp; 
+			
+			<br>&nbsp;
+			
+			</p></div><div class="tudelft-publication tudelft-publication-journal"><h6>Bui,&nbsp;H.&nbsp;H. and Yorke-Smith,&nbsp;N.
+				</h6><a href="file:///home/kkrle/Downloads/starlab/papers/n80.pdf"><h5><b>Efficient Variable Elimination for Semi-Structured Simple Temporal Networks with Continuous Domains</b></h5></a><p>
+				The Knowledge Engineering Review, <b>25(3)</b>, 337-351, September 2010.
+				&nbsp; <a href="papers/n80.pdf">PDF</a> &nbsp; 
+				<span class="tudelft-copyright">©2010 Cambridge University Press</span>
+				
+			<br>&nbsp;
+			
+			</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Thangarajah,&nbsp;J.; Harland,&nbsp;J.; Morley,&nbsp;D.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="file:///home/kkrle/Downloads/starlab/papers/n79.pdf"><h5><b>On the Life-Cycle of BDI Agent Goals</b></h5></a><p>
+				Proceedings of ECAI'10, Lisbon, Portugal, August 2010.
+				&nbsp; <a href="papers/n79.pdf">PDF</a> &nbsp; 
+			
+				
+			<br>&nbsp;  
+			
+			</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Anouze,&nbsp;L.&nbsp;A. and Yorke-Smith,&nbsp;N.
+			   </h6><a href="file:///home/kkrle/Downloads/starlab/papers/n79.pdf"><h5>Optimal National Resource Allocation for Multi-Factor Development: Cross-Country Analysis Based on DEA</h5></a><p>
+			   Presented at: 24th European Conference on Operational Research (EURO XXIV),
+			   Lisbon, Portugal, July 2010. 
+			   
+			<br>&nbsp;
+			  
+			</p></div><div class="tudelft-publication"><h6>Chu,&nbsp;G.; Petrie&nbsp;K.&nbsp;E.; and Yorke-Smith,&nbsp;N.
+			   </h6><a href="file:///home/kkrle/Downloads/starlab/papers/n77.pdf"><h5>Constraint Programming to Solve Maximal Density Still Life</h5></a><p>
+			   Adamatzky,&nbsp;A. (ed). <em>Game of Life Cellular Automata</em>. Springer, July 2010.
+			   &nbsp; <a href="papers/n77.pdf">PDF</a> &nbsp; 
+				<span class="tudelft-copyright">©2010 Springer</span> 
+				
+			<br>&nbsp;
+			
+			</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Planken,&nbsp;L.; de Weerdt,&nbsp;M.; and Yorke-Smith,&nbsp;N.
+			  </h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n76.pdf"><h5><b>Incrementally Solving STNs by Enforcing Partial Path Consistency</b></h5></a><p>
+			  Proceedings of ICAPS'10, Toronto, Canada, May 2010.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n76.pdf">PDF</a> &nbsp; 
+				<span class="tudelft-copyright">©2010 AAAI</span>
+				
+			<br>&nbsp;
+			
+			</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Venable,&nbsp;K.&nbsp;B.; Volpato,&nbsp;M.; Peintner,&nbsp;B.; and Yorke-Smith,&nbsp;N.
+			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n75.pdf"><h5>Weak and Dynamic Controllability of Temporal Problems with Disjunctions and Uncertainty</h5></a><p>
+				Proceedings of ICAPS'10 Workshop on Constraint Satisfaction 
+			Techniques for Planning and Scheduling Problems, Toronto, Canada, May 
+			2010.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n75.pdf">PDF</a> &nbsp;
+			
+				
+			<br>&nbsp;
+			
+			</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>van Riemsdijk,&nbsp;M.&nbsp;B. and Yorke-Smith,&nbsp;N.
+			  </h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n74.pdf"><h5>Towards Reasoning with Partial Goal Satisfaction in Intelligent Agents</h5></a><p>
+			  Proceedings of AAMAS'10 Workshop on Programming Multi-agent Systems, Toronto, Canada, May 2010.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n74.pdf">PDF</a> &nbsp; 
+			
+				
+			<br>&nbsp;
+			
+			</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Thangarajah,&nbsp;J.; Harland,&nbsp;J.; Morley,&nbsp;D.; and Yorke-Smith,&nbsp;N.
+			  </h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n73.pdf"><h5>Operational Behaviour for Executing, Suspending, and
+			Aborting Goals in BDI Agent Systems</h5></a><p>
+			  Proceedings of AAMAS'10 Workshop on Declarative Agent Languages and Technologies, Toronto, Canada, May 2010.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n73.pdf">PDF</a> &nbsp;
+			
+				
+			</p></div></div><div class="tudelft-year"><h3>2009</h3><div class="tudelft-publication tudelft-publication-journal"><h6>Weber,&nbsp;J. and Yorke-Smith,&nbsp;N.
+			  </h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n72.pdf"><h5><b>Designing for Usability of an Adaptive Time Management Assistant</b></h5></a><p>
+			  AI Magazine <b>30(4)</b>, 103-110, Winter 2009.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n72.pdf">PDF</a>  &nbsp;
+				<span class="tudelft-copyright">©2009 AAAI</span>
+				
+			<br>&nbsp;
+			  
+			</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Jameson,&nbsp;A.; Spaulding,&nbsp;A.; and Yorke-Smith,&nbsp;N. (eds).
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n72.pdf"></a><h5><a href="http://homepage.tudelft.nl/0p6y8/papers/n72.pdf"></a><a href="http://www.aaai.org/ojs/index.php/aimagazine/issue/view/188/showToc">Special Issue on Usable AI</a></h5><p>
+				AI Magazine <b>30(4)</b>, Winter 2009.
+				&nbsp;  &nbsp;
+			<span class="tudelft-copyright">©2009 AAAI</span>
+				  
+			<br>&nbsp;
+			  
+			</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Refanidis,&nbsp;I. and Yorke-Smith,&nbsp;N.
+			  </h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n70.pdf"><h5>On Scheduling Events and Tasks by an Intelligent Calendar Assistant</h5></a><p>
+			  Proceedings of ICAPS'09 Workshop on Constraint Satisfaction Techniques for Planning and Scheduling Problems,
+					Thessaloniki, Greece, September 2009.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n70.pdf">PDF</a>  &nbsp; 
+				
+			<br>&nbsp;
+			
+			</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Kwong,&nbsp;H. and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n68.pdf"><h5><b>Detection of Imperative and Declarative Question-Answer Pairs in Email Conversations</b></h5></a><p>
+				Proceedings of IJCAI'09, Pasadena, CA, July 2009.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n68.pdf">PDF</a> &nbsp;
+				<span class="tudelft-copyright">©2009 IJCAI</span>
+				
+			<br>&nbsp;
+				
+			</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Berry,&nbsp;P.; Donneau-Golencer,&nbsp;T.; Duong,&nbsp;K.; Gervasio,&nbsp;M.; Peintner,&nbsp;B.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n67.pdf"><h5><b>Evaluating User-Adaptive Systems: Lessons from Experiences with a Personalized Meeting Scheduling Assistant</b></h5></a><p>
+				Proceedings of IAAI'09, Pasadena, CA, July 2009.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n67.pdf">PDF</a> &nbsp;
+				<span class="tudelft-copyright">©2009 AAAI</span>
+				
+			<br>&nbsp;
+				
+			</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>
+				Yorke-Smith,&nbsp;N.; Saadati,&nbsp;S.; Myers,&nbsp;K.; and Morley,&nbsp;D.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n66.pdf"><h5><b>Like an Intuitive and Courteous Butler: A Proactive Personal Agent for Task Management</b></h5></a><p>
+					Proceedings of AAMAS'09, Budapest, Hungary, May 2009.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n66.pdf">PDF</a>  &nbsp;
+				<span class="tudelft-copyright">©2009 IFAAMAS</span>
+				
+			<br>&nbsp;
+			
+			</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Berry,&nbsp;P.; Donneau-Golencer,&nbsp;T.; Duong,&nbsp;K.; Gervasio,&nbsp;M.; Peintner,&nbsp;B.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n65.pdf"><h5>Mixed-Initiative Negotiation: Facilitating Useful Interaction Between Agent/Owner Pairs</h5></a><p>
+				Proceedings of AAMAS'09 Workshop on Mixed-Initiative Multiagent Systems, Budapest, Hungary, May 2009.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n65.pdf">PDF</a> &nbsp;
+				
+				
+			<br>&nbsp;
+			
+			</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Castillo,&nbsp;L.; Cortellessa,&nbsp;G.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n63.pdf"><h5>The 2008 Scheduling and Planning Applications Workshop (SPARK'08)</h5></a><p>
+				AI Magazine <b>30(1)</b>, 119-120, Spring 2009.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n63.pdf">PDF</a> &nbsp;<span class="tudelft-copyright">©2009 AAAI</span>
+			<!-- "http://www.aaai.org/ojs/index.php/aimagazine/issue/view/185/showToc" -->
+				  
+			&nbsp;
+				
+			</p></div><div class="tudelft-publication tudelft-publication-journal"><h6>Yorke-Smith,&nbsp;N. and Gervet,&nbsp;C.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n62.pdf"><h5><b>Certainty Closure: Reliable Constraint Reasoning with Uncertain Data</b></h5></a><p>
+				ACM Transactions on Computational Logic <b>10(1)</b>, 3:1-3:41, January 2009.
+				&nbsp;
+			<!--    <a href="http://arxiv.org/abs/cs.AI/0601109">Abstract</a> -->
+				<a href="http://homepage.tudelft.nl/0p6y8/papers/n62.pdf">PDF</a> |
+				 &nbsp;
+				<span class="tudelft-copyright">©2009 ACM</span>
+				
+			</p></div></div><div class="tudelft-year"><h3>2008</h3><div class="tudelft-publication tudelft-publication-journal"><h6>Peintner,&nbsp;B.; Viappiani,&nbsp;P.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n61.pdf"><h5><b>Preferences in Interactive Systems: Technical Challenges and Case Studies</b></h5></a><p>
+			AI Magazine <b>29(4)</b>, 13-24, Winter 2008.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n61.pdf">PDF</a> &nbsp;<span class="tudelft-copyright">©2008 AAAI</span>
+				
+			<br>&nbsp;
+				
+			</p></div><div class="tudelft-publication"><h6>Berry,&nbsp;P.; Donneau-Golencer,&nbsp;T.; Duong,&nbsp;K.; Gervasio,&nbsp;M.; Peintner,&nbsp;B.; and Yorke-Smith,&nbsp;N.
+			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n60.pdf"><h5>Emma: An Event Management Assistant</h5></a><p>
+				Proceedings of ICAPS'08 System Demonstrations, Sydney, Australia, September 2008.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n60.pdf">PDF</a> &nbsp;
+			
+				
+			<br>&nbsp;
+			
+			</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Bui,&nbsp;H.&nbsp;H.; Tyson,&nbsp;M.; and Yorke-Smith,&nbsp;N.
+			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n59.pdf"><h5>Efficient Message Passing and Propagation of Simple Temporal Constraints: Results on Semi-Structured Networks</h5></a><p>
+				Proceedings of CP/ICAPS'08 Joint Workshop on Constraint Satisfaction Techniques for Planning and Scheduling Problems,
+				Sydney, Australia, September 2008.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n59.pdf">PDF</a> &nbsp; 
+			
+				
+			<br>&nbsp;
+			
+			</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Meuleau,&nbsp;N.; Morris,&nbsp;R.&nbsp;A.; and Yorke-Smith,&nbsp;N. 
+			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n58.pdf"><h5>A Variable Elimination Approach for Optimal Scheduling with Linear Preferences</h5></a><p>
+				Proceedings of CP/ICAPS'08 Joint Workshop on Constraint Satisfaction Techniques for Planning and Scheduling Problems,
+				Sydney, Australia, September 2008.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n58.pdf">PDF</a> &nbsp; 
+			
+				
+			<br>&nbsp;
+			
+			</p></div><div class="tudelft-publication"><h6>Bui,&nbsp;H.&nbsp;H.; Cesari,&nbsp;F.; Elenius,&nbsp;D.;
+				House,&nbsp;N.; Morley,&nbsp;D.; Myers,&nbsp;K.&nbsp;M.;
+				Natarajan,&nbsp;S.; Saadati,&nbsp;S.; Yeh,&nbsp;E.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n58.pdf"><h5>CALO Workflow Recognition and Proactive Assistance</h5></a><p>
+				AAAI-08 AI Video Competition, Chicago, IL, July 2008.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n57.avi">AVI (93M)</a> 
+				
+			<br>&nbsp;
+			
+			</p></div><div class="tudelft-publication"><h6>Berry,&nbsp;P.; Bulka,&nbsp;B.; Peintner,&nbsp;B.; Roberts,&nbsp;M.; and Yorke-Smith,&nbsp;N.
+			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n56.pdf"><h5>Neptune: A Mixed-Initiative Environment for Planning and Scheduling</h5></a><p>
+				Proceedings of FLAIRS'08, Coconut Grove, FL, May 2008. <b>Best Poster award</b>
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n56.pdf">PDF</a> 
+				
+			<br>&nbsp;
+			
+			</p></div><div class="tudelft-publication"><h6>Bui,&nbsp;H.&nbsp;H.; Cesari,&nbsp;F.; Elenius,&nbsp;D.; Morley,&nbsp;D.;
+				Natarajan,&nbsp;S.; Saadati,&nbsp;S.; Yeh,&nbsp;E.; and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n55.pdf"><h5>A Context-Aware Personal Desktop Assistant</h5></a><p>
+				Proceedings of AAMAS'08 Demonstration Track, Estoril, Portugal, May 2008.
+			 &nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n55.pdf">PDF</a> &nbsp;
+				<span class="tudelft-copyright">©2008 IFAAMAS</span>
+			
+				
+			<br>&nbsp;
+			
+			</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Thangarajah,&nbsp;J.; Harland,&nbsp;J.; Morley,&nbsp;D.; and Yorke-Smith,&nbsp;N.
+			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n54.pdf"><h5><b>Suspending and Resuming Tasks in Intelligent Agents</b></h5></a><p>
+				Proceedings of AAMAS'08, Estoril, Portugal, May 2008.
+			 &nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n54.pdf">PDF</a> &nbsp;
+				<span class="tudelft-copyright">©2008 IFAAMAS</span>
+			
+				
+			<br>&nbsp;
+				
+			</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Weber,&nbsp;J.&nbsp;S. and Yorke-Smith,&nbsp;N.
+			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n52.pdf"><h5>Time Management with Adaptive Reminders: Two Studies and Their Design Implications</h5></a><p>
+				Working notes of CHI'08 Workshop: Usable Artificial Intelligence, Florence, Italy, April 2008.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n52.pdf">PDF</a> &nbsp;
+				
+				
+			</p></div></div><div class="tudelft-year"><h3>2007</h3><div class="tudelft-publication tudelft-publication-conference"><h6>Peintner,&nbsp;B.; Venable,&nbsp;K.&nbsp;B.; and Yorke-Smith,&nbsp;N.
+			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n51.pdf"><h5><b>Strong Controllability of Disjunctive Temporal Problems with Uncertainty</b></h5></a><p>
+				Proceedings of CP'07, Providence, RI, September 2007.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n51.pdf">PDF</a> &nbsp;
+			<span class="tudelft-copyright">©2007 Springer</span>
+				
+			<br>&nbsp;
+			
+			</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Thangarajah,&nbsp;J.; Harland,&nbsp;J.; and Yorke-Smith,&nbsp;N.
+			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n50.pdf"><h5>A Soft COP Model for Goal Deliberation in a BDI Agent</h5></a><p>
+				Proceedings of CP'07 Workshop on Constraint Modelling and Reformulation,
+				Providence, RI, September 2007.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n50.pdf">PDF</a> 
+				
+			<br>&nbsp;
+				
+			</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Berry,&nbsp;P.; Moffitt,&nbsp;M.&nbsp;D.; Peintner,&nbsp;B.; and Yorke-Smith,&nbsp;N.
+			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n49.pdf"><h5>The Design of a User-Centric Scheduling System for Multi-Faceted Real-World Problems</h5></a><p>
+				Proceedings of ICAPS'07 Workshop on Moving Planning and Scheduling Systems into the Real World,
+				Providence, RI, September 2007.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n49.pdf">PDF</a>
+				
+			<br>&nbsp;
+				
+			</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Bui,&nbsp;H.&nbsp;H.; Tyson,&nbsp;M.; and Yorke-Smith,&nbsp;N.
+			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n48.pdf"><h5>Efficient Message Passing and Propagation of Simple Temporal Constraints</h5></a><p>
+				Proceedings of AAAI 2007 Workshop on Spatial and Temporal Reasoning,
+				Vancouver, Canada, July 2007.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n48.pdf">PDF</a> &nbsp; 
+			
+				
+			<br>&nbsp;
+			
+			</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Berry,&nbsp;P.; Gervasio,&nbsp;M.; Peintner,&nbsp;B.; and Yorke-Smith,&nbsp;N.
+			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n47.pdf"><h5>A Preference Model for Over-Constrained Meeting Requests</h5></a><p>
+				Proceedings of AAAI 2007 Workshop on Preference Handling for Artificial Intelligence,
+				Vancouver, Canada, July 2007.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n47.pdf">PDF</a> &nbsp;
+			
+				
+			<br>&nbsp;
+			
+			</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Thangarajah,&nbsp;J.; Harland,&nbsp;J.; Morley,&nbsp;D.; and Yorke-Smith,&nbsp;N.
+			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n46.pdf"><h5><b>Aborting Tasks in BDI Agents</b></h5></a><p>
+				Proceedings of AAMAS'07, Honolulu, HI, May 2007.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n46.pdf">PDF</a> &nbsp;
+			<span class="tudelft-copyright">©2007 ACM</span>
+			
+				
+			<br>&nbsp;
+			
+			</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Myers,&nbsp;K. and Yorke-Smith,&nbsp;N.
+			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n45.pdf"><h5>Proactive Behavior of a Personal Assistive Agent</h5></a><p>
+				Proceedings of AAMAS'07 Workshop on Metareasoning in Agent-Based Systems,
+				Honolulu, HI, May 2007.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n45.pdf">PDF</a>  &nbsp; 
+			
+				
+			<br>&nbsp;
+			
+			</p></div><div class="tudelft-publication"><h6>Yorke-Smith,&nbsp;N. (ed).
+			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n45.pdf"></a><h5><a href="http://homepage.tudelft.nl/0p6y8/papers/n45.pdf"></a><a href="http://www.ai.sri.com/~nysmith/organizing/sss07/">Interaction Challenges for Intelligent Assistants</a>: Papers from the AAAI Spring Symposium</h5><p>
+				AAAI Technical Report SS-07-04, March 2007.  <a href="http://www.aaai.org/Library/Symposia/Spring/ss07-04.php">AAAI Press</a>, Menlo Park, CA.
+				&nbsp; 
+				
+			<br>&nbsp;
+				
+			</p></div><div class="tudelft-publication"><h6>Berry,&nbsp;P.; Peintner,&nbsp;B.; and Yorke-Smith,&nbsp;N.
+			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n43.pdf"><h5>Bringing the User Back into Scheduling: Two Case Studies of Interaction
+				with Intelligent Scheduling Assistants</h5></a><p>
+				Proceedings of AAAI 2007 Spring Symposium on Interaction Challenges for Intelligent
+				Assistants, Stanford, CA, March 2007.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n43.pdf">PDF</a> &nbsp;
+			<span class="tudelft-copyright">©2007 AAAI</span>
+			
+				
+			<br>&nbsp;
+				
+			</p></div><div class="tudelft-publication"><h6>Myers,&nbsp;K. and Yorke-Smith,&nbsp;N.
+			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n42.pdf"><h5>Proactivity in an Intentionally Helpful Personal Assistive Agent</h5></a><p>
+				Proceedings of AAAI 2007 Spring Symposium on Intentions in Intelligent Systems,
+				Stanford, CA, March 2007.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n42.pdf">PDF</a> &nbsp; 
+			<span class="tudelft-copyright">©2007 AAAI</span>
+			
+				
+			<!--
+			<br>&nbsp;
+			
+			</li><li>Berry,&nbsp;P.; Gervasio,&nbsp;M.; Peintner,&nbsp;B.; and Yorke-Smith,&nbsp;N.
+			<em>Balancing the Needs of Personalization and Reasoning in a User-Centric Scheduling Assistant</em>.
+			Technical Note 561, Artificial Intelligence Center, SRI International,
+				February 2007.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n41.pdf">PDF</a> &nbsp;
+			-->
+			</p></div></div><div class="tudelft-year"><h3>2006</h3><div class="tudelft-publication tudelft-publication-journal"><h6>Rossi,&nbsp;F.; Venable,&nbsp;K.&nbsp;B.; and Yorke-Smith,&nbsp;N.
+			   </h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n40.pdf"><h5><b>Uncertainty in Soft Temporal Constraint Problems: A General Framework and Controllability Algorithms for the Fuzzy Case</b></h5></a><p>
+				Journal of Artificial Intelligence Research
+			<b>27</b>, 617-674, December 2006. &nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n40.pdf">PDF</a>
+			<!--    <a href="https://arxiv.org/abs/1110.2212">Abstract</a> -->
+				
+			<br>&nbsp;
+			
+			</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Moffitt,&nbsp;M.&nbsp;D.; Peintner,&nbsp;B.; and Yorke-Smith,&nbsp;N.
+			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n39.pdf"><h5>Multi-Criteria Optimization of Temporal Preferences</h5></a><p>
+			Proceedings of CP'06 Workshop on Preferences and Soft Constraints, Nantes,
+				France, September 2006.
+			 &nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n39.pdf">PDF</a> &nbsp;
+			
+				 
+			<br>&nbsp;
+			
+			</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Morley,&nbsp;D.; Myers,&nbsp;K.; and Yorke-Smith,&nbsp;N.
+			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n38.pdf"><h5><b>Continuous Refinement of Agent Resource Estimates</b></h5></a><p>
+			Proceedings of AAMAS'06, Hakodate, Japan, May 2006.
+			 &nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n38.pdf">PDF</a> &nbsp;
+			<span class="tudelft-copyright">©2006 ACM</span> 
+			
+				
+			<br>&nbsp;
+			
+			</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Berry,&nbsp;P.; Conley,&nbsp;K.; Gervasio,&nbsp;M.; Peintner,&nbsp;B.; Uribe,&nbsp;T.; and Yorke-Smith,&nbsp;N.
+			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n37.pdf"><h5><b>Deploying a Personalized Time Management Agent</b></h5></a><p>
+			Proceedings of AAMAS'06 Industrial Track, Hakodate, Japan, May 2006.
+			 &nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n37.pdf">PDF</a> &nbsp;
+			<span class="tudelft-copyright">©2006 ACM</span> 
+			
+				
+			<br>&nbsp;
+			
+			</p></div><div class="tudelft-publication"><h6>Berry,&nbsp;P.; Albright,&nbsp;C.; Bowring,&nbsp;E.; Conley,&nbsp;K.;
+				Nitz,&nbsp;K.; Pearce,&nbsp;J.; Peintner,&nbsp;P.; Saadati,&nbsp;S.; 
+				Tambe,&nbsp;M.; Uribe,&nbsp;T.; and Yorke-Smith,&nbsp;N.
+			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n36.pdf"><h5>Conflict Negotiation Among Personal Calendar Agents</h5></a><p>
+			Proceedings of AAMAS'06 Demonstration Track, Hakodate, Japan, May 2006.
+			 &nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n36.pdf">PDF</a> &nbsp;
+			<span class="tudelft-copyright">©2006 ACM</span> 
+			
+				
+			<br>&nbsp;
+			
+			</p></div><div class="tudelft-publication"><h6>Berry,&nbsp;P.; Gervasio,&nbsp;M.; Peintner,&nbsp;B.; Uribe,&nbsp;T.; and Yorke-Smith,&nbsp;N.
+			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n35.pdf"><h5>Multi-Criteria Evaluation in User-Centric Distributed Scheduling Agents</h5></a><p>
+			Proceedings of AAAI 2006 Spring Symposium on
+			Distributed Plan and Schedule Management, Stanford, CA,
+			March 2006. &nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n35.pdf">PDF</a> &nbsp;
+			<span class="tudelft-copyright">©2006 AAAI</span> 
+				
+			</p></div></div><div class="tudelft-year"><h3>2005</h3><div class="tudelft-publication"><h6>Myers,&nbsp;K. and Yorke-Smith,&nbsp;N.
+			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n34.pdf"><h5>A Cognitive Framework for Delegation to an Assistive User Agent</h5></a><p>
+			Proceedings of AAAI 2005 Fall Symposium on
+			Mixed-Initiative Problem Solving Assistants, Arlington, VA, 
+			November 2005. &nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n34.pdf">PDF</a> &nbsp;
+			<span class="tudelft-copyright">©2005 AAAI</span>
+				
+			<br>&nbsp;
+			
+			</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Yorke-Smith,&nbsp;N. and Gervet,&nbsp;C.  </h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n33.pdf"><h5>Closures of Uncertain
+				Constraint Satisfaction Problems</h5></a><p> 
+			Proceedings of CP'05 Workshop on Quantification in Constraint Programming,
+				Sitges, Spain, October 2005.
+			 &nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n33.pdf">PDF</a>
+			
+				
+			<br>&nbsp;
+				
+			</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Yorke-Smith,&nbsp;N. and Gervet,&nbsp;C.  </h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n32.pdf"><h5>Uncertain Constraint
+				Optimisation Problems</h5></a><p>
+			Proceedings of CP'05 Workshop on Preferences and
+			Soft Constraints, Sitges, Spain, October 2005.
+			 &nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n32.pdf">PDF</a>
+			
+				
+			<br>&nbsp;
+				
+			</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Berry,&nbsp;P.; Myers,&nbsp;K.; Uribe,&nbsp;T.; and Yorke-Smith,&nbsp;N.
+			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n31.pdf"><h5>Task Management under Change and Uncertainty: Constraint Solving
+			Experience with the CALO Project</h5></a><p>  Proceedings of CP'05 Workshop on
+			Constraint Solving under Change and Uncertainty, Sitges, Spain, October
+			2005.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n31.pdf">PDF</a>
+			
+				
+			<br>&nbsp;
+				
+			</p></div><div class="tudelft-publication"><h6>Morris,&nbsp;R.&nbsp;A.; Dungan,&nbsp;J.; Edgington,&nbsp;W.; Williams,&nbsp;J.;
+			Carlson,&nbsp;C.; Fleming,&nbsp;D.; Wood,&nbsp;T.; and Yorke-Smith,&nbsp;N.
+			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n29.pdf"><h5>Coordinated Science Campaign Scheduling for Sensor Webs</h5></a><p>
+			Proceedings of i-SAIRAS'05, Munchen, Germany, September 2005.
+			 &nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n29.pdf">PDF</a> 
+				
+			<br>&nbsp;
+			
+			</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Venable,&nbsp;K.&nbsp;B. and Yorke-Smith,&nbsp;N.
+			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n28.pdf"><h5><b>Disjunctive Temporal Planning with Uncertainty</b></h5></a><p>
+			Proceedings of IJCAI'05, Edinburgh, UK, August 2005.
+			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n28.pdf">PDF</a> &nbsp;
+			<span class="tudelft-copyright">©2005 IJCAI</span>
+				
+			<br>&nbsp;
+				
+			</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n26.pdf"><h5><b>Exploiting the Structure of Hierarchical Plans in Temporal
+				Constraint Propagation</b></h5></a><p>  Proceedings of AAAI'05, Pittsburgh, PA,
+				July 2005.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n26.pdf">PDF</a>&nbsp;
+			<span class="tudelft-copyright">©2005 AAAI</span>
+				
+			<br>&nbsp;
+				
+			  </p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Guettier,&nbsp;C. and Yorke-Smith,&nbsp;N.
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n24.pdf"><h5>Enhancing the Anytime Behaviour of Mixed CSP-Based Planning</h5></a><p>
+				Proceedings of ICAPS'05 Workshop on Planning under Uncertainty for
+				Autonomous Systems, Monterey, CA, June 2005.
+			 &nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n24.pdf">PDF</a> 
+				
+			<br>&nbsp;
+			
+			  </p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Berry,&nbsp;P.; Gervasio,&nbsp;M.; Uribe,&nbsp;T.; and Yorke-Smith,&nbsp;N.
+			  </h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n23.pdf"><h5>Mixed-Initiative Issues for a Personalized Time Management Assistant</h5></a><p>
+			  Proceedings of ICAPS'05 Workshop on Mixed-Initiative Planning And Scheduling, Monterey, CA, June 2005.
+			   &nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n23.pdf">PDF</a>  
+				
+			<br>&nbsp;
+			
+			</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Morris,&nbsp;R.&nbsp;A.; Morris,&nbsp;P.; Khatib,&nbsp;L.; and Yorke-Smith,&nbsp;N.    
+				</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n22.pdf"><h5>Temporal Planning with Preferences and Probabilities</h5></a><p>  Proceedings of
+				ICAPS'05 Workshop on Constraint Programming for Planning and Scheduling,
+			Monterey, CA, June 2005.
+				&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n22.pdf">PDF</a> 
+				 
+			</p></div></div><div class="tudelft-year"><h3>2004</h3><div class="tudelft-publication tudelft-publication-conference"><h6>Rossi,&nbsp;F.; Venable,&nbsp;K.&nbsp;B.; and Yorke-Smith,&nbsp;N.
+			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n19.pdf"><h5><b>Controllability of Soft Temporal Constraint Problems</b></h5></a><p>
+			Proceedings of CP'04, Toronto, Canada, September 2004.
+			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n19.pdf">PDF</a>&nbsp;
+			<span class="tudelft-copyright">©2004 Springer</span>
+				
+			<br>&nbsp;
+				
+			</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Yorke-Smith,&nbsp;N. and Gervet,&nbsp;C.  </h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n17.pdf"><h5>Tight and Tractable
+			Reformulations for Uncertain CSPs</h5></a><p>  
+			Proceedings of CP'04 Workshop on Modelling and Reformulating Constraint
+			Satisfaction Problems, Toronto, Canada, September 2004.
+			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n17.pdf">PDF</a>
+			
+				
+			<br>&nbsp;
+				
+			</p></div><div class="tudelft-publication"><h6>Petrie,&nbsp;K.&nbsp;E.; Smith,&nbsp;B.&nbsp;M.; and Yorke-Smith,&nbsp;N.
+			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n16.pdf"><h5>Dynamic Symmetry Breaking in Constraint Programming and Linear
+			Programming Hybrids</h5></a><p>  Proceedings of STAIRS'04, Valencia, Spain, August 2004.
+			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n16.pdf">PDF</a>
+				
+			<br>&nbsp;
+				
+			</p></div><div class="tudelft-publication"><h6>Yorke-Smith,&nbsp;N. </h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n16.pdf"><h5>Reliable Constraint Reasoning with Uncertain
+			Data</h5></a><p>  PhD thesis, IC-Parc, Imperial College London, June 2004.
+			&nbsp; 
+				
+			</p></div></div><div class="tudelft-year"><h3>2003</h3><div class="tudelft-publication"><h6>Yorke-Smith,&nbsp;N. and Guettier,&nbsp;C.  </h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n11.pdf"><h5>Towards Automatic
+			Robust Planning for the Discrete Commanding of Aerospace Equipment</h5></a><p>
+			Proceedings of 2003 IEEE International Symposium on Intelligent Control,
+			Houston, TX, October 2003. &nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n11.pdf">PDF</a>
+			&nbsp;<span class="tudelft-copyright">©2003 IEEE</span>
+				
+			<br>&nbsp;
+			
+			</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Yorke-Smith,&nbsp;N. and Gervet,&nbsp;C.  </h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n10.pdf"><h5><b>Certainty Closure:
+			A Framework for Reliable Constraint Reasoning with Uncertainty</b></h5></a><p>
+			Proceedings of CP'03, Kinsale, Ireland, September
+			2003. &nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n10.pdf">PDF</a>&nbsp;
+			<span class="tudelft-copyright">©2003 Springer</span>
+				
+			<br>&nbsp;
+			
+			</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Yorke-Smith,&nbsp;N.; Venable,&nbsp;K.&nbsp;B.; and Rossi,&nbsp;F.
+			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n8.pdf"><h5><b>Temporal Reasoning with Preferences and Uncertainty</b></h5></a><p>  Proceedings
+			of IJCAI'03, Acapulco, Mexico, August 2003.
+				&nbsp;<a href="http://homepage.tudelft.nl/0p6y8/papers/n8.pdf">PDF</a>&nbsp;
+			<span class="tudelft-copyright">©2003 IJCAI</span>    
+				
+			</p></div></div><div class="tudelft-year"><h3>2002</h3><div class="tudelft-publication tudelft-publication-journal"><h6>Riera,&nbsp;D. and Yorke-Smith,&nbsp;N.  </h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n6.pdf"><h5><b>An Improved Hybrid Model for the
+			Generic Hoist Scheduling Problem</b></h5></a><p>  Annals of Operations Research
+			<b>115</b>, 173-191, September 2002. &nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n6.pdf">PDF</a>&nbsp;
+				<span class="tudelft-copyright">©2002 Springer</span>
+				
+			<br>&nbsp;
+			  
+			</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Yorke-Smith,&nbsp;N. and Gervet,&nbsp;C.  </h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n4.pdf"><h5><b>On Constraint Problems with
+			Incomplete or Erroneous Data</b></h5></a><p>  Proceedings of CP'02, Ithaca, NY,
+			September 2002. &nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n4.pdf">PDF</a>&nbsp;
+				<span class="tudelft-copyright">©2002 Springer</span>
+				
+			</p></div></div><div class="tudelft-year"><h3>2001</h3><div class="tudelft-publication"><h6>Yorke-Smith,&nbsp;N. and Gervet,&nbsp;C.  </h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n1.pdf"><h5>Data Uncertainty in Constraint
+			Programming: A Non-Probabilistic Approach</h5></a><p>  Proceedings of AAAI
+			2001 Fall Symposium on Using Uncertainty within Computation, Cape Cod, MA,
+			November 2001. &nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n1.pdf">PDF</a>&nbsp;
+				<span class="tudelft-copyright">©2001 AAAI</span> 
+				
+				
+			</p></div></div>
 			</div>
 		</div>
-		<div class="container-lg tudelft-padding" id="publications">
-			<div class="tudelft-year"><h3>2021</h3><div class="tudelft-publication tudelft-publication-preprint"><h6>Harland,&nbsp;J.; Thangarajah,&nbsp;J.; and Yorke-Smith,&nbsp;N.
-			</h6><h5><b>Quantifying the Progress of Goals in Intelligent Agents</b></h5><p>
-			International Journal of Agent-Oriented Software Engineering,
-			2021 (to appear).
-			&nbsp;
-			<span class="tudelft-copyright">©2021 Inderscience</span>
-			
-			<br>&nbsp;
-		  
-			</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Oudshoorn,&nbsp;M.; Koppenberg,&nbsp;T.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/j35.pdf"><h5><b>Optimisation of Annual Planned Rail Maintenance</b></h5></a><p>
-			Computer-Aided Civil and Infrastructure Engineering,
-			August 2021.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/j35.pdf">PDF</a>  
-				
-			<br>&nbsp;
-			
-			</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Doolaard,&nbsp;F. and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/w44.pdf"><h5>Online Learning of Deeper Variable Ordering Heuristics for Constraint Optimisation</h5></a><p>
-			Presented at: IJCAI'21 Workshop on Data Science Meets Optimisation,
-			Montreal, Canada, August 2021.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/w44.pdf">PDF</a>
-			
-			<br>&nbsp;
-		  
-			</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>van Driel,&nbsp;R.; Demirović,&nbsp;E.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/c28.pdf"><h5><b>Learning Variable Activity Initialisation for Lazy Clause Generation Solvers</b></h5></a><p>
-			Proceedings of the 18th International Conference on the Integration of Constraint Programming, Artificial Intelligence, and Operations Research (CPAIOR'21),
-			Vienna, Austria, July 2021.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/c28.pdf">PDF</a> &nbsp;<span class="tudelft-copyright">©2021 Springer</span>
-			
-			<br>&nbsp;
 		
-			</p></div><div class="tudelft-publication tudelft-publication-journal"><h6>Yilmaz,&nbsp;K. and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/j34.pdf"><h5><b>A Study of Learning Search Approximation in Mixed Integer Branch and Bound: Node Selection in SCIP</b></h5></a><p>
-			AI, <b>2(2)</b>, April 2021.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/j34.pdf">PDF</a>   &nbsp;
-			
-			<br>&nbsp;
-		  
-			</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Overwater,&nbsp;A. and Yorke-Smith;&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/j33.pdf"><h5><b>Agent-Based Simulation of Short-Term Peer-to-Peer Rentals: Evidence from the Amsterdam Housing Market</b></h5></a><p>
-			Environment and Planning B: Urban Analytics and City Science, 2021
-			(to appear).
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/j33.pdf">PDF</a>   &nbsp;<span class="tudelft-copyright">©2021 SAGE</span>
-			
-			<br>&nbsp;
-		
-			</p></div><div class="tudelft-publication tudelft-publication-journal"><h6>Fisher,&nbsp;M.; Mascardi,&nbsp;V.; Rozier,&nbsp;K.&nbsp;Y.; Schlingloff,&nbsp;H.; Winikoff,&nbsp;M.; and Yorke-Smith;&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/j32.pdf"><h5><b>Towards a Framework for Certification of Reliable Autonomous Systems</b></h5></a><p>
-			Autonomous Agents and Multi-Agent Systems, <b>35</b>, April 2021.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/j32.pdf">PDF</a>   &nbsp;
-			
-			<br>&nbsp;
-		
-			</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Telang,&nbsp;P.; Singh,&nbsp;M.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/c27.pdf"><h5><b>Maintenance of Social Commitments in Multiagent Systems</b></h5></a><p>
-			Proceedings of the 35th AAAI Conference on Artificial Intelligence (AAAI'21), Vancouver, Canada, February 2021.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/c27.pdf">PDF</a>
-			&nbsp;<span class="tudelft-copyright">©2021 AAAI</span>    
-			
-			<br>&nbsp;
-			
-			</p></div><div class="tudelft-publication tudelft-publication-journal"><h6>Termos,&nbsp;A.; Picascia,&nbsp;S.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/j31.pdf"><h5><b>Agent-Based Simulation of West Asian Urban Dynamics: Impact of Refugees</b></h5></a><p>
-			Journal of Artificial Societies and Social Simulation, <b>24(1)</b>, January 2021.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/j31.pdf">PDF</a>   
-			
-			<br>&nbsp;
-		  
-			</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Thorbjarnarson,&nbsp;T. and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/w43.pdf"><h5>On Training Neural Networks with Mixed Integer Programming</h5></a><p>
-			Presented at: IJCAI-PRICAI'20 Workshop on Data Science Meets Optimisation.  Yokohama, Japan, January 2021.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/w43.pdf">PDF</a>
-			
-			<br>&nbsp;
-		
-			</p></div><div class="tudelft-publication tudelft-publication-journal"><h6>Piao,&nbsp;L.; de Vries,&nbsp;L.; de Weerdt,&nbsp;M.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/j30.pdf"><h5><b>Electricity Markets for DC Distribution Systems: Locational Pricing Trumps Wholesale Pricing</b></h5></a><p>
-			Energy, <b>214</b>, January 2021.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/j30.pdf">PDF</a>   &nbsp; 
-			
-		
-			</p><p></p><p></p></div></div><div class="tudelft-year"><h3>2020</h3><div class="tudelft-publication tudelft-publication-journal"><h6>Wallace,&nbsp;M. and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/j29.pdf"><h5><b>A New Constraint Programming Model and Solving for the Cyclic Hoist Scheduling Problem</b></h5></a><p>
-			Constraints, <b>25(3-4)</b>, November 2020.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/j29.pdf">PDF</a>   
-			
-			<br>&nbsp;
-		
-			</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Gevers,&nbsp;L. and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/cs15.pdf"><h5>Cooperation in Harsh Environments: The Effects of Noise in Iterated Prisoner's Dilemma</h5></a><p>
-			Proceedings of the 32th Benelux Conference on Artificial Intelligence (BNAIC'20),
-			Leiden, Netherlands, November 2020.  <b>Best Student Paper award</b>
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/cs15.pdf">PDF</a> 
-			
-			<br>&nbsp;    
-		
-			</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Miglani,&nbsp;M. and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/w42.pdf"><h5>NLtoPDDL: One-Shot Learning of PDDL Models from Natural Language Process Manuals</h5></a><p>
-			Proceedings of the ICAPS'20 Workshop on Knowledge Engineering for Planning and Scheduling,
-			Nancy, France, October 2020.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/w42.pdf">PDF</a> 
-			
-			<br>&nbsp;
-		
-			</p></div><div class="tudelft-publication"><h6>Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/r29.pdf"><h5>Responsible Artificial Intelligence (book review)</h5></a><p>
-			Prometheus, <b>36(3)</b>, September 2020.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/r29.pdf">PDF</a> 
-			
-			<br>&nbsp;
-			
-			</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Wallace,&nbsp;M. and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/c26.pdf"><h5><b>A New Constraint Programming Model and Solving for the Cyclic Hoist Scheduling Problem</b></h5></a><p>
-			Proceedings of the 17th International Conference on the Integration of Constraint Programming, Artificial Intelligence, and Operations Research (CPAIOR'20).
-			Vienna, Austria, September 2020.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/c26.pdf">PDF</a>
-			&nbsp;<span class="tudelft-copyright">©2020 Springer</span>
-			
-			<br>&nbsp;
-		
-		<!--    
-			</li><li>Thorbjarnarson,&nbsp;T. and Yorke-Smith,&nbsp;N.
-			<em>On Training Neural Networks with Mixed Integer Programming</em>.
-			Arxiv preprint <a
-			href="http://arxiv.org/abs/2009.03825">2009.03825</a>, September 2020.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/r29.pdf">PDF</a> &nbsp;<br />
-			<span class="explain">Learns a neural network using MIP, with more data than previous MIP approaches.</span>
-			<br>&nbsp;
-		-->    
-		
-			</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>van Driel,&nbsp;R. and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/w41.pdf"><h5>Towards Unsatisfiable Core Learning for Chuffed</h5></a><p>
-			Presented at: CP'20 Workshop on Progress Towards the Holy Grail.
-			Louvain-la-Neuve, Belgium, September 2020.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/w41.pdf">PDF</a> 
-			
-			<br>&nbsp;
-			
-			</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Saur,&nbsp;R.; La Poutre,&nbsp;H; and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/c25.pdf"><h5>Towards Optimal Demand-Side Bidding in Parallel Auctions for Time-Shiftable Electrical Loads</h5></a><p>
-			Proceedings of the 18th IEEE International Conference on Industrial Informatics (INDIN'20).
-			Warwick, UK, July 2020.
-			&nbsp;<a href="http://homepage.tudelft.nl/0p6y8/papers/c25.pdf">PDF</a> &nbsp;<span class="tudelft-copyright">©2020 IEEE</span>
-			
-			<br>&nbsp;    
-		
-		<!--    
-			</li><li>Yilmaz,&nbsp;K. and Yorke-Smith,&nbsp;N.
-			<em>Learning Efficient Search Approximation in Mixed Integer Branch and Bound</em>.
-			Arxiv preprint <a
-			href="http://arxiv.org/abs/2007.03948">2007.03948</a>, July 2020.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/r28.pdf">PDF</a> &nbsp;<br>
-			<span class="explain">Shows how a learned policy can replicate standard MIP node selection heuristics.</span>
-			<br>&nbsp;
-		-->
-			
-		<!--    
-			</li><li>Fisher,&nbsp;M.; Mascardi,&nbsp;V.; Rozier,&nbsp;K.&nbsp;Y.; Schlingloff,&nbsp;H.; Winikoff,&nbsp;M.; and Yorke-Smith;&nbsp;N.
-			<em>Towards a Framework for Certification of Reliable Autonomous Systems</em>.
-			Arxiv preprint <a href="http://arxiv.org/abs/2001.09124">2001.0912</a>, January 2020.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/r26.pdf">PDF</a>  <a href="https:/doi.org/10.1007/s10845-019-01518-4">DOI</a> &nbsp;<br>
-			<span class="explain">Argues for why autonomous systems need certification.  Appears in <em>Autonomous Agents and Multiagent Systems</em> journal.</span>
-			<br>&nbsp;
-		-->
-			
-			</p></div><div class="tudelft-publication tudelft-publication-journal"><h6>He,&nbsp;L.; de Weerdt,&nbsp;M.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/j28.pdf"><h5><b>Time/Sequence-Dependent Scheduling: The Design and Evaluation of a General Tabu-Based Adaptive Large Neighbourhood Search Algorithm</b></h5></a><p>
-			Journal of Intelligent Manufacturing, <b>31</b>, April 2020.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/j28.pdf">PDF</a>   &nbsp;
-			
-		
-			</p><p></p><p></p></div></div><div class="tudelft-year"><h3>2019</h3><div class="tudelft-publication tudelft-publication-journal"><h6>He,&nbsp;L.; Guijt,&nbsp;A.; de Weerdt,&nbsp;M.; Xing,&nbsp;L.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/j27.pdf"><h5><b>Order Acceptance and Scheduling with Sequence-dependent Setup Times: A New Memetic Algorithm and Benchmark of the State of the Art</b></h5></a><p>
-			Computers &amp; Industrial Engineering, <b>138</b>, December 2019.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/j27.pdf">PDF</a>   &nbsp;
-		<!--    <a href="https://arxiv.org/abs/1910.01982">Abstract</a> |-->
-			<span class="tudelft-copyright">©2019 Elsevier</span>
-			
-			<br>&nbsp;
-		
-			</p></div><div class="tudelft-publication"><h6>Chappin,&nbsp;E.&nbsp;J.&nbsp;L.; Nikolic,&nbsp;I.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/bc10.pdf"><h5>Agent-Based Modelling of the Social Dynamics of Energy End-Use</h5></a><p>
-			Energy and Behaviour: Challenges of a Low-Carbon Future.
-			Academic Press, November 2019.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/bc10.pdf">PDF</a>   &nbsp;
-			<span class="tudelft-copyright">©2019 Elsevier</span>
-			
-			<br>&nbsp;
-			
-			</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Saur,&nbsp;R.; Yorke-Smith,&nbsp;N.; and La Poutre,&nbsp;H.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/c24.pdf"><h5>Combined Heat and Power Markets by Double-Sided Auction Mechanisms</h5></a><p>
-			Proceedings of the 9th IEEE PES Innovative Smart Grid Technologies Europe Conference (ISGT-Europe'19). Bucharest, Romania, September-October 2019.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/c24.pdf">PDF</a>   &nbsp;
-			<span class="tudelft-copyright">©2019 IEEE</span>
-			
-			<br>&nbsp;
-		
-			</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Piao,&nbsp;L.; de Vries,&nbsp;L.; de Weerdt,&nbsp;M.; and
-		Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/c23.pdf"><h5>Markets for Direct Current Distribution Systems: Towards Energy-based vs. Flex-based Designs</h5></a><p>
-			Proceedings of the 16th International Conference on the European Energy Market (EEM'19).  Ljubljana, Slovenia, September 2019.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/c23.pdf">PDF</a> &nbsp;
-			<span class="tudelft-copyright">©2019 IEEE</span>
-			
-			<br>&nbsp;
-			
-			</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Jonker,&nbsp;T.; Duinkerken,&nbsp;M.&nbsp;B.; Yorke-Smith,&nbsp;N.; de Waal,&nbsp;A.; and Negenborn,&nbsp;R.&nbsp;R.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/j26.pdf"><h5><b>Coordinated Optimization of Equipment Operations on a Container Terminal</b></h5></a><p>
-			Flexible Services and Manufacturing Journal, July 2019.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/j26.pdf">PDF</a>   &nbsp; 
-			
-			<br>&nbsp;
-		  
-			</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Hofstede,&nbsp;G.&nbsp;J.; Jonker,&nbsp;C.&nbsp;M.; Verwaart,&nbsp;T.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/j25.pdf"><h5><b>The Lemon Car Game Across Cultures: Evidence of Relational Rationality</b></h5></a><p>
-			Group Decision and Negotiation, July 2019.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/j25.pdf">PDF</a>   &nbsp; 
-			
-			<br>&nbsp;
-			  
-			</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>He,&nbsp;L.; de Weerdt,&nbsp;M.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/c22.pdf"><h5><b>Tabu-Based Large Neighbourhood Search for Time/Sequence-Dependent Scheduling Problems with Time Windows</b></h5></a><p>
-			Proceedings of the 29th International Conference on Automated Planning and Scheduling (ICAPS'19). Berkeley, CA, July 2019.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/c22.pdf">PDF</a> &nbsp; 
-			
-			<br>&nbsp;
-		
-			</p></div><div class="tudelft-publication tudelft-publication-journal"><h6>Piao,&nbsp;L.; de Vries,&nbsp;L.; de Weerdt,&nbsp;M.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/j24.pdf"><h5><b>Electricity Markets for DC Distribution Systems: Design Options</b></h5></a><p>
-			Energies, <b>12</b>, July 2019.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/j24.pdf">PDF</a>   &nbsp; 
-			
-			<br>&nbsp;
-		
-			</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Wallace,&nbsp;M. and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/j24.pdf"><h5>Cyclic Hoist Scheduling: Experiments with Modern Solvers</h5></a><p>
-			Presented at: 16th International Conference on the Integration of Constraint Programming, Artificial Intelligence, and Operations Research (CPAIOR'19).
-			Thessaloniki, Greece, June 2019.
-			
-			
-			<br>&nbsp;
-		
-			</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Ziengs,&nbsp;A.&nbsp;H. and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/w40.pdf"><h5>Hot Housing: A Study of Bidding Strategies in the Dutch Urban Residential Market</h5></a><p>
-			Working Notes of AAMAS'19 Workshop on Agent Based Modelling of Urban Systems, Montreal, Canada, May 2019.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/w40.pdf">PDF</a>&nbsp; 
-			
-			<br>&nbsp;
-			
-			</p></div><div class="tudelft-publication tudelft-publication-journal"><h6>Telang,&nbsp;P.; Singh,&nbsp;M.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/j23.pdf"><h5><b>A Coupled Operational Semantics for Goals and Commitments</b></h5></a><p>
-			Journal of Artificial Intelligence Research, <b>65</b>, May 2019.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/j23.pdf">PDF</a>   &nbsp; 
-			
-		
-			</p><p></p><p></p></div></div><div class="tudelft-year"><h3>2018</h3><div class="tudelft-publication tudelft-publication-journal"><h6>Dastani,&nbsp;M.; Torroni,&nbsp;P.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/j22.pdf"><h5><b>Monitoring Norms: A Multi-Disciplinary Perspective</b></h5></a><p>
-			The Knowledge Engineering Review, <b>33</b>, December 2018.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/j22.pdf">PDF</a>   &nbsp; 
-			
-			<br>&nbsp;
-			
-			</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>van Tilburg,&nbsp;J. and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/cs13.pdf"><h5>Strategies for the Iterated Prisoner's Dilemma in a Natural Environment</h5></a><p>
-			Proceedings of the 30th Benelux Conference on Artificial Intelligence (BNAIC'18),
-			's-Hertogenbosch, Netherlands, November 2018.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/cs13.pdf">PDF</a> <!--  <a href="http://dx.doi.org/10.1007/s10115-016-1011-3">DOI</a> &nbsp; -->  
-			
-			<br>&nbsp;
-		
-			</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/a7.pdf"><h5>GoCo: Planning Expressive Commitment Protocols (journal abstract)</h5></a><p>
-			Presented at: 30th Benelux Conference on Artificial Intelligence (BNAIC'18).
-			's-Hertogenbosch, Netherlands, November 2018.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/a7.pdf">PDF</a> <!--  <a href="http://dx.doi.org/10.1007/s10115-016-1011-3">DOI</a> &nbsp; -->  
-			
-			<br>&nbsp;
-		  
-			</p></div><div class="tudelft-publication"><h6>Hugtenburg,&nbsp;S. and Yorke-Smith,&nbsp;N.
-			</h6><a href="https://textbooks.open.tudelft.nl/index.php/textbooks/catalog/book/13/"><h5>Delftse Foundations of Computation</h5></a><p>
-			TU Delft Open Textbook, August 2018.  ISBN 978-94-6366-083-9.
-			&nbsp; <!-- <a href="http://homepage.tudelft.nl/0p6y8/papers/z6.pdf">PDF</a> --> <a href="https://textbooks.open.tudelft.nl/index.php/textbooks/catalog/book/13/">PDF</a>   &nbsp; 
-			
-			<br>&nbsp;
-		  
-			</p></div><div class="tudelft-publication tudelft-publication-journal"><h6>Meneguzzi,&nbsp;F.; Magnaguagno,&nbsp;M.&nbsp;C.; Singh,&nbsp;M.&nbsp;P.; Telang,&nbsp;P.&nbsp;R.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/j21.pdf"><h5><b>GoCo: Planning Expressive Commitment Protocols</b></h5></a><p>
-			Autonomous Agents and Multi-Agent Systems, <b>32(4)</b>, July 2018.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/j21.pdf">PDF</a>   &nbsp; 
-			
-		<br>&nbsp;    
-			
-			</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Srour,&nbsp;F.&nbsp;J. and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/c21.pdf"><h5><b>On Collusion and Coercion: Agent Interconnectedness and In-Group Behaviour</b></h5></a><p>
-			Proceedings of the 17th International Conference on Autonomous Agents and Multiagent Systems (AAMAS'18), Stockholm, Sweden, July 2018.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/c21.pdf">PDF</a>&nbsp;
-			<span class="tudelft-copyright">©2018 IFAAMAS</span>
-			
-			<br>&nbsp;
-		
-			</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Picascia,&nbsp;S.; Termos,&nbsp;A.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/cs12.pdf"><h5><b>Initial Results from an Agent-Based Simulation of Housing in Urban Beirut</b></h5></a><p>
-			Proceedings of 17th International Conference on Autonomous Agents and Multiagent Systems (AAMAS'18), Stockholm, Sweden, July 2018.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/cs12.pdf">PDF</a>&nbsp;
-			<span class="tudelft-copyright">©2018 IFAAMAS</span>
-			
-			<br>&nbsp;
-		
-			</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Piao,&nbsp;L.; de Vries,&nbsp;L.; de Weerdt,&nbsp;M.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/c20.pdf"><h5>Electricity Market for Direct Current Distribution Systems: Exploring the Design Space</h5></a><p>
-			Proceedings of the 15th International Conference on the European Energy Market (EEM'18), Lodz, Poland, June 2018.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/c20.pdf">PDF</a> 
-			
-			<br>&nbsp;
-			
-			</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>He,&nbsp;L.; de Weerdt,&nbsp;M.; Yorke-Smith,&nbsp;N.; Liu,&nbsp;X.; and Chen,&nbsp;Y.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/w38.pdf"><h5>Tabu-Based Large Neighbourhood Search for Time-Dependent Multi-Orbit Agile Satellite Scheduling</h5></a><p>
-			Proceedings of the ICAPS'18 Scheduling and Planning Applications Workshop, Delft, The Netherlands, June 2018.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/w38.pdf">PDF</a> 
-			
-			<br>&nbsp;
-		
-			</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/w37.pdf"><h5>On Learning from Human Expert Knowledge for Automated Scheduling</h5></a><p>
-			Proceedings of the ICAPS'18 Workshop Knowledge Engineering for Planning and Scheduling, Delft, The Netherlands, June 2018.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/w37.pdf">PDF</a> 
-			
-			<br>&nbsp;
-		
-			</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/a5.pdf"><h5>Evaluating a Knowledge-Based Scheduling Assistant (journal abstract)</h5></a><p>
-			Presented at: ICAPS'18 Workshop Knowledge Engineering for Planning and Scheduling, Delft, The Netherlands, June 2018.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/a5.pdf">PDF</a> 
-			
-			<br>&nbsp;
-		
-			</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Srour,&nbsp;F.&nbsp;J. and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/bc9.pdf"><h5>An Initial Study of Agent Interconnectedness and In-Group Behaviour</h5></a><p>
-			Post-proceedings of AAMAS'17 Workshop on Multi-Agent-Based Simulation, LNCS 10798, Springer, May 2018.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/bc9.pdf">PDF</a>   &nbsp; 
-			<span class="tudelft-copyright">©2018 Springer</span> 
-			
-			<br>&nbsp;
-			
-			</p></div><div class="tudelft-publication"><h6>Roberts,&nbsp;M.; Borrajo,&nbsp;D.; Cox,&nbsp;M.; and Yorke-Smith,&nbsp;N. (eds).
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/bc9.pdf"></a><h5><a href="http://homepage.tudelft.nl/0p6y8/papers/bc9.pdf"></a><a href="https://content.iospress.com/journals/ai-communications/31/2">Special Issue on Goal Reasoning</a></h5><p>
-			AI Communications, <b>31(2)</b>, March 2018.
-			&nbsp; <!-- <a href="http://homepage.tudelft.nl/0p6y8/papers/n120.pdf">PDF</a>  -->  &nbsp; 
-			<span class="tudelft-copyright">©2018 IOS Press</span>
-			
-		
-		  </p><p></p><p></p></div></div><div class="tudelft-year"><h3>2017</h3><div class="tudelft-publication tudelft-publication-conference"><h6>Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/a4.pdf"><h5>Evaluating Intelligent Knowledge Systems (journal abstract)</h5></a><p>
-			Presented at: 29th Benelux Conference on Artificial Intelligence (BNAIC'17).
-			Groningen, Netherlands, November 2017.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/a4.pdf">PDF</a> <!--  <a href="http://dx.doi.org/10.1007/s10115-016-1011-3">DOI</a> &nbsp; -->  
-			
-			<br>&nbsp;
-		  
-			</p></div><div class="tudelft-publication tudelft-publication-journal"><h6>Berry,&nbsp;P.; Donneau-Golencer,&nbsp;T.; Duong,&nbsp;K.; Gervasio,&nbsp;M.; Peintner,&nbsp;B.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/j20.pdf"><h5><b>Evaluating Knowledge Systems: Experiences with a User-Adaptive Intelligent Agent</b></h5></a><p>
-			Knowledge and Information Systems, <b>52(2)</b>, August 2017.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/j20.pdf">PDF</a>   &nbsp; 
-			<span class="tudelft-copyright">©2017 Springer</span> 
-			
-			<br>&nbsp;
-				
-			</p></div><div class="tudelft-publication tudelft-publication-journal"><h6>Logan&nbsp;B.; Thangarajah,&nbsp;J.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/c19.pdf"><h5><b>Progressing Intention Progression: A Call for a Goal-Plan Tree Contest</b></h5></a><p>
-			Proceedings of 16th International Conference on Autonomous Agents and Multiagent Systems (AAMAS'17), Sao Paulo, Brazil, May 2017. <b>Best Blue Sky Paper award</b>
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/c19.pdf">PDF</a> &nbsp;
-			<span class="tudelft-copyright">©2017 IFAAMAS</span>
-			
-			<br>&nbsp;
-		
-			</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Srour,&nbsp;F.&nbsp;J. and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/w36.pdf"><h5>On Collusion and Coercion: A Study of Agent Interconnectedness and In-Group Behaviour</h5></a><p>
-			Working Notes of AAMAS'17 Workshop on Multi-Agent-Based Simulation, Sao Paulo, Brazil, May 2017.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/w36.pdf">PDF</a>&nbsp; 
-			
-			<br>&nbsp;
-		
-			</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Picascia,&nbsp;S.; Termos,&nbsp;A.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/w35.pdf"><h5>Towards Data-Driven Agent-Based Simulation: A Case Study of West Asian Urban Dynamics</h5></a><p>
-			Working Notes of AAMAS'17 Workshop on Agent Based Modelling of Urban Systems, Sao Paulo, Brazil, May 2017.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/w35.pdf">PDF</a>&nbsp; 
-			
-			<br>&nbsp;
-			
-			</p></div><div class="tudelft-publication tudelft-publication-journal"><h6>Thangarajah,&nbsp;J.; Harland,&nbsp;J.; Morley,&nbsp;D.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/j19.pdf"><h5><b>Aborting, Suspending, and Resuming Goals and Plans in Intelligent Agents</b></h5></a><p>
-			Autonomous Agents and Multi-Agent Systems, <b>31(2)</b>, March 2017.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/j19.pdf">PDF</a>   &nbsp; 
-			
-			<br>&nbsp;
-			
-			</p></div><div class="tudelft-publication tudelft-publication-journal"><h6>Dastani,&nbsp;M.; van der Torre,&nbsp;L.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/j18.pdf"><h5><b>Commitments and Interaction Norms in Organisations</b></h5></a><p>
-			Autonomous Agents and Multi-Agent Systems, <b>31(2)</b>, March 2017.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/j18.pdf">PDF</a>   &nbsp; 
-			
-			<br>&nbsp;
-		
-			</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Picascia,&nbsp;S. and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/bc8.pdf"><h5>Towards an Agent-Based Simulation of Housing in Urban Beirut</h5></a><p>
-			Post-proceedings of AAMAS'16 Workshop on Agent Based Modelling of Urban Systems, LNCS 10051, Springer, January 2017.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/bc8.pdf">PDF</a>   &nbsp; 
-			<span class="tudelft-copyright">©2017 Springer</span> 
-			
-		
-			</p><p></p><p></p></div></div><div class="tudelft-year"><h3>2016</h3><div class="tudelft-publication tudelft-publication-journal"><h6>Guo,&nbsp;G.; Zhang,&nbsp;J.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/j17.pdf"><h5><b>A Novel Recommendation Model Regularized with User Trust and Item Ratings</b></h5></a><p>
-			IEEE Transactions on Knowledge and Data Engineering, <b>28(7)</b>, July 2016.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/j17.pdf">PDF</a>   &nbsp;
-			<span class="tudelft-copyright">©2016 IEEE</span> 
-			
-			<br>&nbsp;
-		
-			</p></div><div class="tudelft-publication tudelft-publication-journal"><h6>Guo,&nbsp;G., Zhang,&nbsp;J., and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/j16.pdf"><h5><b>A Novel Evidence-based Bayesian Similarity Measure for Recommender Systems</b></h5></a><p>
-			ACM Transactions on the Web, <b>10(2)</b>, May 2016. 
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/j16.pdf">PDF</a>   &nbsp; 
-			<span class="tudelft-copyright">©2016 ACM</span>
-			
-			<br>&nbsp;
-		
-			</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Srour,&nbsp;F.&nbsp;J. and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/c18.pdf"><h5><b>Assessing Maritime Customs Process Re-Engineering using Agent-Based Simulation</b></h5></a><p>
-			Proceedings of 15th International Conference on Autonomous Agents and Multiagent Systems (AAMAS'16), Singapore, May 2016.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/c18.pdf">PDF</a> &nbsp; 
-			<span class="tudelft-copyright">©2016 IFAAMAS</span>
-			
-			<br>&nbsp;
-		
-			</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Picascia,&nbsp;S. and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/w34.pdf"><h5>Migration, Refugees, and Urban Dynamics: Towards an Agent-Based Simulation of Housing in Urban Beirut</h5></a><p>
-			Working Notes of AAMAS'16 Workshop on Agent Based Modelling of Urban Systems, Singapore, May 2016.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/w34.pdf">PDF</a>&nbsp; 
-			
-			
-			</p><p></p><p></p></div></div><div class="tudelft-year"><h3>2015</h3><div class="tudelft-publication"><h6>Dechesne,&nbsp;F.; Ghorbani,&nbsp;A.; and Yorke-Smith,&nbsp;N. (eds).
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n120.pdf"></a><h5><a href="http://homepage.tudelft.nl/0p6y8/papers/n120.pdf"></a><a href="http://link.springer.com/article/10.1007/s00146-014-0535-x">Special Issue on Agent-Based Modelling for Policy Engineering</a></h5><p>
-			AI &amp; Society, <b>30(3)</b>, August 2015.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n120.pdf">PDF</a>   &nbsp; 
-			<span class="tudelft-copyright">©2014 Springer</span>
-			
-		<br>&nbsp;
-		
-			</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Guo,&nbsp;G.; Zhang&nbsp;J.; Sun,&nbsp;Z.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n119.pdf"><h5>LibRec: A Java Library for Recommender Systems</h5></a><p>
-			Proceedings of 23rd International Conference on User Modelling, Adaptation and Personalization (UMAP'15), Demonstration Track.
-			Dublin, Ireland. July 2015.    
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n119.pdf">PDF</a> &nbsp; 
-			
-		<br>&nbsp;    
-			
-			</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Meneguzzi,&nbsp;F.; Telang, P.&nbsp;R.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n118.pdf"><h5><b>Towards Planning Uncertain Commitment Protocols</b></h5></a><p>
-			Proceedings of 14th International Conference on Autonomous Agents and Multiagent Systems (AAMAS'15), Istanbul, Turkey, May 2015.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n118.pdf">PDF</a> &nbsp; 
-			<span class="tudelft-copyright">©2015 IFAAMAS</span>
-			
-		<br>&nbsp;    
-			
-			</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Harland,&nbsp;J.; Thangarajah,&nbsp;J.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n117.pdf"><h5><b>Estimating the Progress of Maintenance Goals</b></h5></a><p>
-			Proceedings of 14th International Conference on Autonomous Agents and Multiagent Systems (AAMAS'15), Istanbul, Turkey, May 2015.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n117.pdf">PDF</a> &nbsp;
-			<span class="tudelft-copyright">©2015 IFAAMAS</span>
-			
-		<br>&nbsp;    
-			
-			</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Srour,&nbsp;F.&nbsp;J. and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n116.pdf"><h5><b>Towards Agent-Based Simulation of Maritime Customs</b></h5></a><p>
-			Proceedings of 14th International Conference on Autonomous Agents and Multiagent Systems (AAMAS'15), Istanbul, Turkey, May 2015.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n116.pdf">PDF</a> &nbsp; 
-			<span class="tudelft-copyright">©2015 IFAAMAS</span>
-			
-		<br>&nbsp;    
-		
-			</p></div><div class="tudelft-publication tudelft-publication-journal"><h6>Chaudhri,&nbsp;V.; Heymans,&nbsp;S.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n115.pdf"><h5><b>Reasoning About Interruption of Biological Processes</b></h5></a><p>
-			Biologically Inspired Cognitive Architectures, <b>12</b>, April 2015.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n115.pdf">PDF</a>   &nbsp; 
-			<span class="tudelft-copyright">©2015 Elsevier</span>
-			
-		<br>&nbsp;    
-		
-			</p></div><div class="tudelft-publication tudelft-publication-journal"><h6>Guo,&nbsp;G.; Zhang,&nbsp;J.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n114.pdf"><h5><b>Leveraging Multiviews of Trust and Similarity to Enhance Clustering-based Recommender Systems</b></h5></a><p>
-			Knowledge-Based Systems, <b>74</b>, January 2015.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n114.pdf">PDF</a>   &nbsp; 
-			<span class="tudelft-copyright">©2014 Elsevier</span>
-			
-		<br>&nbsp;
-		
-			</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Guo,&nbsp;G.; Zhang,&nbsp;J.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n113.pdf"><h5><b>TrustSVD: Collaborative Filtering with Both the Explicit and Implicit Influence of User Trust and of Item Ratings</b></h5></a><p>
-			Proceedings of 29th AAAI Conference on Artificial Intelligence (AAAI'15), Austin, TX, January 2015.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n113.pdf">PDF</a> &nbsp; 
-			
-			
-			  </p><p></p><p></p></div></div><div class="tudelft-year"><h3>2014</h3><div class="tudelft-publication tudelft-publication-journal"><h6>Chaudhri,&nbsp;V.&nbsp;K.; Elenius,&nbsp;D.; Goldenkranz,&nbsp;A.; Gong,&nbsp;A.; Martone,&nbsp;M.; Webb,&nbsp;W.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/j13.pdf"><h5><b>Comparative Analysis of Knowledge Representation and Reasoning Requirements across a Range of Life Sciences Textbooks</b></h5></a><p>
-			Journal of Biomedical Semantics, <b>5</b>, December 2014.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/j13.pdf">PDF</a>   &nbsp; 
-			
-		<br>&nbsp;
-		  
-			</p></div><div class="tudelft-publication tudelft-publication-journal"><h6>Guo,&nbsp;G.; Zhang,&nbsp;J.; Thalmann,&nbsp;D.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n111.pdf"><h5><b>Leveraging Prior and Posterior Ratings for Recommender Systems in E-Commerce</b></h5></a><p>
-			Electronic Commerce Research and Applications, <b>13(6)</b>, November-December 2014.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n111.pdf">PDF</a>   &nbsp; 
-			<span class="tudelft-copyright">©2014 Elsevier</span>
-			
-		<br>&nbsp;
-		
-			</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Guo,&nbsp;G.; Zhang,&nbsp;J.; Thalmann,&nbsp;D.; Basu,&nbsp;A.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n110.pdf"><h5><b>ETAF: An Extended Trust Antecedents Framework for Trust Prediction</b></h5></a><p>
-			Proceedings of 6th IEEE/ACM International Conference on Social Networks Analysis and Mining (ASONAM'14), Beijing, China, August 2014.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n110.pdf">PDF</a> &nbsp; 
-			
-		<br>&nbsp;
-			
-			</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Thangarajah,&nbsp;J.; Harland,&nbsp;J.; Morley,&nbsp;D.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n109.pdf"><h5><b>Quantifying the Completeness of Goals in BDI Agent</b></h5></a><p>
-			Proceedings of 21st European Conference on Artificial Intelligence (ECAI'14), Prague, Czech Republic, August 2014.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n109.pdf">PDF</a> &nbsp; 
-			
-		<br>&nbsp;    
-		
-		  </p></div><div class="tudelft-publication tudelft-publication-journal"><h6>Harland,&nbsp;J.; Morley,&nbsp;D.; Thangarajah,&nbsp;J.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n108.pdf"><h5><b>An Operational Semantics for the Goal Life-Cycle in BDI Agents</b></h5></a><p>
-			Autonomous Agents and Multi-Agent Systems, <b>28(4)</b>, July 2014.
-			&nbsp; <!-- <a href="http://homepage.tudelft.nl/0p6y8/papers/n108.html">Abstract</a>  --> <a href="http://homepage.tudelft.nl/0p6y8/papers/n108.pdf">PDF</a> |  &nbsp; 
-			
-		<br>&nbsp;    
-		
-			</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Thangarajah,&nbsp;J.; Harland,&nbsp;J.; Morley,&nbsp;D.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n107.pdf"><h5><b>Towards Quantifying the Completeness of Goals in BDI Agent</b></h5></a><p>
-			Proceedings of 13th International Conference on Autonomous Agents and Multiagent Systems (AAMAS'14), Paris, France, May 2014.
-			&nbsp; <!-- <a href="http://homepage.tudelft.nl/0p6y8/papers/n107.html">Abstract</a>  --> <a href="http://homepage.tudelft.nl/0p6y8/papers/n107.pdf">PDF</a> &nbsp; 
-			<span class="tudelft-copyright">©2014 IFAAMAS</span>
-			
-		<br>&nbsp;    
-		
-			</p></div><div class="tudelft-publication"><h6>Guo,&nbsp;G.; Zhang,&nbsp;J.; Thalmann,&nbsp;D.; Basu,&nbsp;A.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n106.pdf"><h5>From Ratings to Trust: an Empirical Study of Implicit Trust in Recommender Systems</h5></a><p>
-			Proceedings of 29th ACM Symposium on Applied Computing (SAC'14), Gyeongju, Korea, March 2014.
-			&nbsp; <!-- <a href="http://homepage.tudelft.nl/0p6y8/papers/n106.html">Abstract</a>  --> <a href="http://homepage.tudelft.nl/0p6y8/papers/n106.pdf">PDF</a> &nbsp; 
-			
-		
-			</p><p></p><p></p></div></div><div class="tudelft-year"><h3>2013</h3><div class="tudelft-publication tudelft-publication-conference"><h6>Guo,&nbsp;G.; Zhang,&nbsp;J.; Thalmann,&nbsp;D.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n105.pdf"><h5><b>Prior Ratings: A New Information Source for Reccomender Systems in E-Commerce</b></h5></a><p>
-			Proceedings of 7th ACM Recommender Systems Conference (RecSys'13),
-			Hong Kong, China, October 2013.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n105.pdf">PDF</a> &nbsp; 
-			
-			<!-- http://dx.doi.org/10.1145/2507157.2507200 -->
-		<br>&nbsp;
-		
-			</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Chung,&nbsp;K.&nbsp;S.&nbsp;K.; Komashie,&nbsp;A.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n104.pdf"><h5>Envisioning Complexity in Healthcare Systems using Discrete Event Simulation and Social Network Analysis</h5></a><p>
-			Proceedings of 5th IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM'13), Demonstration Track.
-			Niagara Falls, Canada. August 2013.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n104.pdf">PDF</a> &nbsp; 
-			
-		<br>&nbsp;
-			
-			</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Guo,&nbsp;G.; Zhang,&nbsp;J.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n103.pdf"><h5><b>A Novel Bayesian Similarity Measure for Recommender
-			Systems</b></h5></a><p>
-			Proceedings of 23rd International Joint Conference on Artificial Intelligence (IJCAI'13),
-			Beijing, China, August 2013.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n103.pdf">PDF</a> &nbsp; 
-			
-		<br>&nbsp;
-		
-			</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Yorke-Smith,&nbsp;N.; Heymans,&nbsp;S.; and Chaudhri,&nbsp;V.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n102.pdf"><h5><b>Responding to Hypothetical Questions in an Intelligent Tutoring Agent</b></h5></a><p>
-			Proceedings of 12th International Conference on Autonomous Agents and Multiagent Systems (AAMAS'13), 
-			Saint Paul, MN, May 2013.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n102.pdf">PDF</a> &nbsp;
-			<span class="tudelft-copyright">©2013 IFAAMAS</span>
-			
-		<br>&nbsp;
-		
-			</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Dastani,&nbsp;M.; van der Torre,&nbsp;L.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n101.pdf"><h5>Monitoring Interaction in Organisation</h5></a><p>
-			Post-proceedings of AAMAS'12 Workshop on Coordination, Organization, Institutions and Norms (COIN'12), LNCS 7756, Springer, April 2013.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n101.pdf">PDF</a> &nbsp;
-			<span class="tudelft-copyright">©2013 Springer</span> 
-			
-		</p><p></p><p></p></div></div><div class="tudelft-year"><h3>2012</h3><div class="tudelft-publication"><h6>Telang,&nbsp;P.&nbsp;R.; Yorke-Smith,&nbsp;N.; and Singh,&nbsp;M.&nbsp;P.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n100.pdf"><h5>Relating Goals and Commitment Semantics</h5></a><p>
-			Post-proceedings of ProMAS'11, LNCS 7217, Springer, October 2012.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n100.pdf">PDF</a> &nbsp;
-			<span class="tudelft-copyright">©2012 Springer</span> 
-			
-		<br>&nbsp;
-		  
-			</p></div><div class="tudelft-publication tudelft-publication-journal"><h6>Kwong,&nbsp;H. and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n99.pdf"><h5><b>Detection of Imperative and Declarative Question-Answer Pairs in Email Conversations</b></h5></a><p>
-			AI Communications, <b>25(4)</b>, September 2012.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n99.pdf">PDF</a> 
-			 &nbsp;
-			<span class="tudelft-copyright">©2012 IOS Press</span> 
-			
-		<br>&nbsp;
-		
-			</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Chaudhri,&nbsp;V.; Heymans,&nbsp;S.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n98.pdf"><h5>Process Interruption Reasoning</h5></a><p>
-			Proceedings of QR'12 Workshop on Deep Knowledge Representation Challenge.
-			Playa Vista, CA, July 2012.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n98.pdf">PDF</a> &nbsp; 
-			
-		<br>&nbsp;
-			
-			</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Dastani,&nbsp;M.; van der Torre,&nbsp;L.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n97.pdf"><h5><b>A Programming Approach to Monitoring Communication in an Organisational Environment</b></h5></a><p>
-			 Proceedings of 11th International Conference on Autonomous Agents and Multiagent Systems (AAMAS'12), 
-			Valencia, Spain, June 2012.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n97.pdf">PDF</a> &nbsp;
-			<span class="tudelft-copyright">©2012 IFAAMAS</span>
-			
-		<br>&nbsp;
-			
-			</p></div><div class="tudelft-publication"><h6>van Riemsdijk,&nbsp;M.&nbsp;B. and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n95.pdf"><h5>Towards Reasoning with Partial Goal Satisfaction in Intelligent Agents</h5></a><p>
-			Post-proceedings of ProMAS'10, LNCS 6599, Springer, April 2012.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n95.pdf">PDF</a> &nbsp; 
-			<span class="tudelft-copyright">©2012 Springer</span> 
-			
-		<br>&nbsp;
-		
-			</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Harb,&nbsp;H.; Srour,&nbsp;F.&nbsp;J.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n94.pdf"><h5>A Case Study in Model Selection for Policy Engineering: Simulating Maritime Customs</h5></a><p>
-			<!--In: Deschesne, F.; Hattori, H.; ter Mors, A.; Such, J. M.; Weyns, D.; and Dignum, F. (Eds).-->
-			Advanced Agent Technology: Post-proceedings of the AAMAS'11 Workshops, LNCS 7068, Springer, February 2012.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n94.pdf">PDF</a> &nbsp; 
-			<span class="tudelft-copyright">©2012 Springer</span> 
-			
-		<br>&nbsp;
-			
-		</p></div><div class="tudelft-publication tudelft-publication-journal"><h6>Yorke-Smith,&nbsp;N.; Saadati,&nbsp;S.; Myers,&nbsp;K.; and Morley,&nbsp;D.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n93.pdf"><h5><b>The Design of a Proactive Personal Agent for Task Management</b></h5></a><p>
-			International Journal on Artificial Intelligence Tools,
-			<b>21(1)</b>, February 2012.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n93.pdf">PDF</a> 
-			 &nbsp;
-			<span class="tudelft-copyright">©2012 World Scientific</span> 
-			
-		</p><p></p><p></p></div></div><div class="tudelft-year"><h3>2011</h3><div class="tudelft-publication tudelft-publication-journal"><h6>Berry,&nbsp;P.; Gervasio,&nbsp;M.; Peintner,&nbsp;B.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n92.pdf"><h5><b>PTIME: Personalized Assistance for Calendaring</b></h5></a><p>
-			ACM Transactions on Intelligent Systems and Technology, <b>2(4)</b>, 40:1-40:22, July 2011.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n92.pdf">PDF</a>   &nbsp;
-			<span class="tudelft-copyright">©2011 ACM</span>
-			
-		<br>&nbsp;
-		  
-		</p></div><div class="tudelft-publication"><h6>Thangarajah,&nbsp;J.; Harland,&nbsp;J.; Morley,&nbsp;D.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n90.pdf"><h5>Operational Behaviour for Executing, Suspending, and Aborting Goals in BDI Agent Systems</h5></a><p>
-			Post-proceedings of DALT'10, LNCS 6619, Springer, July 2011.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n90.pdf">PDF</a> &nbsp; 
-			<span class="tudelft-copyright">©2011 Springer</span> 
-			
-		<br>&nbsp;
-		
-		</p></div><div class="tudelft-publication"><h6>Refanidis,&nbsp;I.; Alexiadis,&nbsp;A.; and Yorke-Smith,&nbsp;N.
-		  </h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n89.pdf"><h5>Beyond Calendar Mashups: Intelligent Calendaring</h5></a><p>
-		  Proceedings of ICAPS'11 System Demonstrations, Freiburg, Germany, June 2011.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n89.pdf">PDF</a> &nbsp;
-			
-			
-		<br>&nbsp;
-		
-		</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Yorke-Smith,&nbsp;N.
-		  </h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n88.pdf"><h5>Reducing Incentives for Agent Collaboration</h5></a><p>
-		  Proceedings of AAMAS'11 Workshop on Collaborative Agents -- Research and Development,
-		  Taipei, Taiwan, May 2011.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n88.pdf">PDF</a> &nbsp;
-			
-			
-		<br>&nbsp;
-		
-		</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Telang,&nbsp;P.&nbsp;R.; Yorke-Smith,&nbsp;N.; and Singh,&nbsp;M.&nbsp;P.
-		  </h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n87.pdf"><h5>A Coupled Operational Semantics for Goals and Commitments</h5></a><p>
-		  Proceedings of AAMAS'11 Workshop on Programming Multi-Agent Systems,
-		  Taipei, Taiwan, May 2011.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n87.pdf">PDF</a> &nbsp;
-			
-			
-		<br>&nbsp;
-		
-		</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Harb,&nbsp;H.; Srour.&nbsp;F.&nbsp;J.; and Yorke-Smith,&nbsp;N.
-		  </h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n86.pdf"><h5>A Case Study in Model Selection for Policy Engineering: Simulating Maritime Customs</h5></a><p>
-		  Proceedings of AAMAS'11 Workshop on Agent-based Modeling for Policy Engineering,
-		  Taipei, Taiwan, May 2011.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n86.html">Abstract</a>
-		  <a href="http://homepage.tudelft.nl/0p6y8/papers/n86.pdf">PDF</a> &nbsp;
-			
-		<br>&nbsp;
-		
-		</p></div><div class="tudelft-publication"><h6>Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n85.pdf"><h5>The Success of Genre in Interaction Fiction</h5></a><p>
-			Jackson-Mead,&nbsp;K. and Wheeler,&nbsp;J.&nbsp;R. (ed).
-			<em>IF Theory Reader</em>.
-			&gt;&nbsp;Transcript On Press, February 2011.
-			&nbsp; 
-		  <a href="http://homepage.tudelft.nl/0p6y8/papers/n85.pdf">PDF</a> &nbsp;
-			
-		<br>&nbsp;
-		
-		</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Castillo,&nbsp;L.; Cortellessa,&nbsp;G.; and Yorke-Smith,&nbsp;N. (eds).
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n85.pdf"></a><h5><a href="http://homepage.tudelft.nl/0p6y8/papers/n85.pdf"></a><a href="http://onlinelibrary.wiley.com/doi/10.1111/coin.2011.27.issue-1/issuetoc">Special Issue on Scheduling and Planning Applications: Selected Papers from the SPARK Workshop Series</a></h5><p>
-			Computational Intelligence, <b>27(1)</b>, February 2011. &nbsp;
-			 &nbsp;
-		<span class="tudelft-copyright">©2011 Wiley</span>
-			
-		<br>&nbsp;
-		
-		</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Leigh,&nbsp;L. and Yorke-Smith,&nbsp;N.
-		  </h6><a href="file:///home/kkrle/Downloads/starlab/papers/n83.pdf"><h5>An Adaptation of the Bass New Product Diffusion Model for Multiple Purchases of Capital Items</h5></a><p>
-		  Proceedings of 10th International Marketing Trends Conference, Paris, France, January 2011.
-			&nbsp; <a href="papers/n83.pdf">PDF</a>  &nbsp; 
-			
-		</p><p></p><p></p></div></div><div class="tudelft-year"><h3>2010</h3><div class="tudelft-publication tudelft-publication-journal"><h6>Refanidis,&nbsp;I. and Yorke-Smith,&nbsp;N.
-			</h6><a href="file:///home/kkrle/Downloads/starlab/papers/n82.pdf"><h5><b>A Constraint Based Approach to Scheduling an Individual's
-		Activities</b></h5></a><p>
-			ACM Transactions on Intelligent Systems and Technology, <b>1(2)</b>, 12:1-12:32, November 2010.
-			&nbsp; <a href="papers/n82.pdf">PDF</a> &nbsp;<span class="tudelft-copyright">©2010 ACM</span> 
-		   
-		<br>&nbsp;
-		
-		</p></div><div class="tudelft-publication"><h6>Srour,&nbsp;F.&nbsp;J.; Harb,&nbsp;H.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="file:///home/kkrle/Downloads/starlab/papers/n82.pdf"><h5>Maritime Customs Negotiation with Corrupt Agents</h5></a><p>
-			Presented at: INFORMS Annual Meeting 2010, Austin, TX, November 2010.
-			&nbsp; 
-		
-		<br>&nbsp;
-		
-		</p></div><div class="tudelft-publication tudelft-publication-journal"><h6>Bui,&nbsp;H.&nbsp;H. and Yorke-Smith,&nbsp;N.
-			</h6><a href="file:///home/kkrle/Downloads/starlab/papers/n80.pdf"><h5><b>Efficient Variable Elimination for Semi-Structured Simple Temporal Networks with Continuous Domains</b></h5></a><p>
-			The Knowledge Engineering Review, <b>25(3)</b>, 337-351, September 2010.
-			&nbsp; <a href="papers/n80.pdf">PDF</a> &nbsp; 
-			<span class="tudelft-copyright">©2010 Cambridge University Press</span>
-			
-		<br>&nbsp;
-		
-		</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Thangarajah,&nbsp;J.; Harland,&nbsp;J.; Morley,&nbsp;D.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="file:///home/kkrle/Downloads/starlab/papers/n79.pdf"><h5><b>On the Life-Cycle of BDI Agent Goals</b></h5></a><p>
-			Proceedings of ECAI'10, Lisbon, Portugal, August 2010.
-			&nbsp; <a href="papers/n79.pdf">PDF</a> &nbsp; 
-		
-			
-		<br>&nbsp;  
-		
-		</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Anouze,&nbsp;L.&nbsp;A. and Yorke-Smith,&nbsp;N.
-		   </h6><a href="file:///home/kkrle/Downloads/starlab/papers/n79.pdf"><h5>Optimal National Resource Allocation for Multi-Factor Development: Cross-Country Analysis Based on DEA</h5></a><p>
-		   Presented at: 24th European Conference on Operational Research (EURO XXIV),
-		   Lisbon, Portugal, July 2010. 
-		   
-		<br>&nbsp;
-		  
-		</p></div><div class="tudelft-publication"><h6>Chu,&nbsp;G.; Petrie&nbsp;K.&nbsp;E.; and Yorke-Smith,&nbsp;N.
-		   </h6><a href="file:///home/kkrle/Downloads/starlab/papers/n77.pdf"><h5>Constraint Programming to Solve Maximal Density Still Life</h5></a><p>
-		   Adamatzky,&nbsp;A. (ed). <em>Game of Life Cellular Automata</em>. Springer, July 2010.
-		   &nbsp; <a href="papers/n77.pdf">PDF</a> &nbsp; 
-			<span class="tudelft-copyright">©2010 Springer</span> 
-			
-		<br>&nbsp;
-		
-		</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Planken,&nbsp;L.; de Weerdt,&nbsp;M.; and Yorke-Smith,&nbsp;N.
-		  </h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n76.pdf"><h5><b>Incrementally Solving STNs by Enforcing Partial Path Consistency</b></h5></a><p>
-		  Proceedings of ICAPS'10, Toronto, Canada, May 2010.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n76.pdf">PDF</a> &nbsp; 
-			<span class="tudelft-copyright">©2010 AAAI</span>
-			
-		<br>&nbsp;
-		
-		</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Venable,&nbsp;K.&nbsp;B.; Volpato,&nbsp;M.; Peintner,&nbsp;B.; and Yorke-Smith,&nbsp;N.
-		</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n75.pdf"><h5>Weak and Dynamic Controllability of Temporal Problems with Disjunctions and Uncertainty</h5></a><p>
-			Proceedings of ICAPS'10 Workshop on Constraint Satisfaction 
-		Techniques for Planning and Scheduling Problems, Toronto, Canada, May 
-		2010.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n75.pdf">PDF</a> &nbsp;
-		
-			
-		<br>&nbsp;
-		
-		</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>van Riemsdijk,&nbsp;M.&nbsp;B. and Yorke-Smith,&nbsp;N.
-		  </h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n74.pdf"><h5>Towards Reasoning with Partial Goal Satisfaction in Intelligent Agents</h5></a><p>
-		  Proceedings of AAMAS'10 Workshop on Programming Multi-agent Systems, Toronto, Canada, May 2010.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n74.pdf">PDF</a> &nbsp; 
-		
-			
-		<br>&nbsp;
-		
-		</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Thangarajah,&nbsp;J.; Harland,&nbsp;J.; Morley,&nbsp;D.; and Yorke-Smith,&nbsp;N.
-		  </h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n73.pdf"><h5>Operational Behaviour for Executing, Suspending, and
-		Aborting Goals in BDI Agent Systems</h5></a><p>
-		  Proceedings of AAMAS'10 Workshop on Declarative Agent Languages and Technologies, Toronto, Canada, May 2010.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n73.pdf">PDF</a> &nbsp;
-		
-			
-		</p></div></div><div class="tudelft-year"><h3>2009</h3><div class="tudelft-publication tudelft-publication-journal"><h6>Weber,&nbsp;J. and Yorke-Smith,&nbsp;N.
-		  </h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n72.pdf"><h5><b>Designing for Usability of an Adaptive Time Management Assistant</b></h5></a><p>
-		  AI Magazine <b>30(4)</b>, 103-110, Winter 2009.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n72.pdf">PDF</a>  &nbsp;
-			<span class="tudelft-copyright">©2009 AAAI</span>
-			
-		<br>&nbsp;
-		  
-		</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Jameson,&nbsp;A.; Spaulding,&nbsp;A.; and Yorke-Smith,&nbsp;N. (eds).
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n72.pdf"></a><h5><a href="http://homepage.tudelft.nl/0p6y8/papers/n72.pdf"></a><a href="http://www.aaai.org/ojs/index.php/aimagazine/issue/view/188/showToc">Special Issue on Usable AI</a></h5><p>
-			AI Magazine <b>30(4)</b>, Winter 2009.
-			&nbsp;  &nbsp;
-		<span class="tudelft-copyright">©2009 AAAI</span>
-			  
-		<br>&nbsp;
-		  
-		</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Refanidis,&nbsp;I. and Yorke-Smith,&nbsp;N.
-		  </h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n70.pdf"><h5>On Scheduling Events and Tasks by an Intelligent Calendar Assistant</h5></a><p>
-		  Proceedings of ICAPS'09 Workshop on Constraint Satisfaction Techniques for Planning and Scheduling Problems,
-				Thessaloniki, Greece, September 2009.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n70.pdf">PDF</a>  &nbsp; 
-			
-		<br>&nbsp;
-		
-		</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Kwong,&nbsp;H. and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n68.pdf"><h5><b>Detection of Imperative and Declarative Question-Answer Pairs in Email Conversations</b></h5></a><p>
-			Proceedings of IJCAI'09, Pasadena, CA, July 2009.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n68.pdf">PDF</a> &nbsp;
-			<span class="tudelft-copyright">©2009 IJCAI</span>
-			
-		<br>&nbsp;
-			
-		</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Berry,&nbsp;P.; Donneau-Golencer,&nbsp;T.; Duong,&nbsp;K.; Gervasio,&nbsp;M.; Peintner,&nbsp;B.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n67.pdf"><h5><b>Evaluating User-Adaptive Systems: Lessons from Experiences with a Personalized Meeting Scheduling Assistant</b></h5></a><p>
-			Proceedings of IAAI'09, Pasadena, CA, July 2009.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n67.pdf">PDF</a> &nbsp;
-			<span class="tudelft-copyright">©2009 AAAI</span>
-			
-		<br>&nbsp;
-			
-		</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>
-			Yorke-Smith,&nbsp;N.; Saadati,&nbsp;S.; Myers,&nbsp;K.; and Morley,&nbsp;D.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n66.pdf"><h5><b>Like an Intuitive and Courteous Butler: A Proactive Personal Agent for Task Management</b></h5></a><p>
-				Proceedings of AAMAS'09, Budapest, Hungary, May 2009.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n66.pdf">PDF</a>  &nbsp;
-			<span class="tudelft-copyright">©2009 IFAAMAS</span>
-			
-		<br>&nbsp;
-		
-		</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Berry,&nbsp;P.; Donneau-Golencer,&nbsp;T.; Duong,&nbsp;K.; Gervasio,&nbsp;M.; Peintner,&nbsp;B.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n65.pdf"><h5>Mixed-Initiative Negotiation: Facilitating Useful Interaction Between Agent/Owner Pairs</h5></a><p>
-			Proceedings of AAMAS'09 Workshop on Mixed-Initiative Multiagent Systems, Budapest, Hungary, May 2009.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n65.pdf">PDF</a> &nbsp;
-			
-			
-		<br>&nbsp;
-		
-		</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Castillo,&nbsp;L.; Cortellessa,&nbsp;G.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n63.pdf"><h5>The 2008 Scheduling and Planning Applications Workshop (SPARK'08)</h5></a><p>
-			AI Magazine <b>30(1)</b>, 119-120, Spring 2009.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n63.pdf">PDF</a> &nbsp;<span class="tudelft-copyright">©2009 AAAI</span>
-		<!-- "http://www.aaai.org/ojs/index.php/aimagazine/issue/view/185/showToc" -->
-			  
-		&nbsp;
-			
-		</p></div><div class="tudelft-publication tudelft-publication-journal"><h6>Yorke-Smith,&nbsp;N. and Gervet,&nbsp;C.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n62.pdf"><h5><b>Certainty Closure: Reliable Constraint Reasoning with Uncertain Data</b></h5></a><p>
-			ACM Transactions on Computational Logic <b>10(1)</b>, 3:1-3:41, January 2009.
-			&nbsp;
-		<!--    <a href="http://arxiv.org/abs/cs.AI/0601109">Abstract</a> -->
-			<a href="http://homepage.tudelft.nl/0p6y8/papers/n62.pdf">PDF</a> |
-			 &nbsp;
-			<span class="tudelft-copyright">©2009 ACM</span>
-			
-		</p></div></div><div class="tudelft-year"><h3>2008</h3><div class="tudelft-publication tudelft-publication-journal"><h6>Peintner,&nbsp;B.; Viappiani,&nbsp;P.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n61.pdf"><h5><b>Preferences in Interactive Systems: Technical Challenges and Case Studies</b></h5></a><p>
-		AI Magazine <b>29(4)</b>, 13-24, Winter 2008.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n61.pdf">PDF</a> &nbsp;<span class="tudelft-copyright">©2008 AAAI</span>
-			
-		<br>&nbsp;
-			
-		</p></div><div class="tudelft-publication"><h6>Berry,&nbsp;P.; Donneau-Golencer,&nbsp;T.; Duong,&nbsp;K.; Gervasio,&nbsp;M.; Peintner,&nbsp;B.; and Yorke-Smith,&nbsp;N.
-		</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n60.pdf"><h5>Emma: An Event Management Assistant</h5></a><p>
-			Proceedings of ICAPS'08 System Demonstrations, Sydney, Australia, September 2008.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n60.pdf">PDF</a> &nbsp;
-		
-			
-		<br>&nbsp;
-		
-		</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Bui,&nbsp;H.&nbsp;H.; Tyson,&nbsp;M.; and Yorke-Smith,&nbsp;N.
-		</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n59.pdf"><h5>Efficient Message Passing and Propagation of Simple Temporal Constraints: Results on Semi-Structured Networks</h5></a><p>
-			Proceedings of CP/ICAPS'08 Joint Workshop on Constraint Satisfaction Techniques for Planning and Scheduling Problems,
-			Sydney, Australia, September 2008.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n59.pdf">PDF</a> &nbsp; 
-		
-			
-		<br>&nbsp;
-		
-		</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Meuleau,&nbsp;N.; Morris,&nbsp;R.&nbsp;A.; and Yorke-Smith,&nbsp;N. 
-		</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n58.pdf"><h5>A Variable Elimination Approach for Optimal Scheduling with Linear Preferences</h5></a><p>
-			Proceedings of CP/ICAPS'08 Joint Workshop on Constraint Satisfaction Techniques for Planning and Scheduling Problems,
-			Sydney, Australia, September 2008.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n58.pdf">PDF</a> &nbsp; 
-		
-			
-		<br>&nbsp;
-		
-		</p></div><div class="tudelft-publication"><h6>Bui,&nbsp;H.&nbsp;H.; Cesari,&nbsp;F.; Elenius,&nbsp;D.;
-			House,&nbsp;N.; Morley,&nbsp;D.; Myers,&nbsp;K.&nbsp;M.;
-			Natarajan,&nbsp;S.; Saadati,&nbsp;S.; Yeh,&nbsp;E.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n58.pdf"><h5>CALO Workflow Recognition and Proactive Assistance</h5></a><p>
-			AAAI-08 AI Video Competition, Chicago, IL, July 2008.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n57.avi">AVI (93M)</a> 
-			
-		<br>&nbsp;
-		
-		</p></div><div class="tudelft-publication"><h6>Berry,&nbsp;P.; Bulka,&nbsp;B.; Peintner,&nbsp;B.; Roberts,&nbsp;M.; and Yorke-Smith,&nbsp;N.
-		</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n56.pdf"><h5>Neptune: A Mixed-Initiative Environment for Planning and Scheduling</h5></a><p>
-			Proceedings of FLAIRS'08, Coconut Grove, FL, May 2008. <b>Best Poster award</b>
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n56.pdf">PDF</a> 
-			
-		<br>&nbsp;
-		
-		</p></div><div class="tudelft-publication"><h6>Bui,&nbsp;H.&nbsp;H.; Cesari,&nbsp;F.; Elenius,&nbsp;D.; Morley,&nbsp;D.;
-			Natarajan,&nbsp;S.; Saadati,&nbsp;S.; Yeh,&nbsp;E.; and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n55.pdf"><h5>A Context-Aware Personal Desktop Assistant</h5></a><p>
-			Proceedings of AAMAS'08 Demonstration Track, Estoril, Portugal, May 2008.
-		 &nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n55.pdf">PDF</a> &nbsp;
-			<span class="tudelft-copyright">©2008 IFAAMAS</span>
-		
-			
-		<br>&nbsp;
-		
-		</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Thangarajah,&nbsp;J.; Harland,&nbsp;J.; Morley,&nbsp;D.; and Yorke-Smith,&nbsp;N.
-		</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n54.pdf"><h5><b>Suspending and Resuming Tasks in Intelligent Agents</b></h5></a><p>
-			Proceedings of AAMAS'08, Estoril, Portugal, May 2008.
-		 &nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n54.pdf">PDF</a> &nbsp;
-			<span class="tudelft-copyright">©2008 IFAAMAS</span>
-		
-			
-		<br>&nbsp;
-			
-		</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Weber,&nbsp;J.&nbsp;S. and Yorke-Smith,&nbsp;N.
-		</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n52.pdf"><h5>Time Management with Adaptive Reminders: Two Studies and Their Design Implications</h5></a><p>
-			Working notes of CHI'08 Workshop: Usable Artificial Intelligence, Florence, Italy, April 2008.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n52.pdf">PDF</a> &nbsp;
-			
-			
-		</p></div></div><div class="tudelft-year"><h3>2007</h3><div class="tudelft-publication tudelft-publication-conference"><h6>Peintner,&nbsp;B.; Venable,&nbsp;K.&nbsp;B.; and Yorke-Smith,&nbsp;N.
-		</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n51.pdf"><h5><b>Strong Controllability of Disjunctive Temporal Problems with Uncertainty</b></h5></a><p>
-			Proceedings of CP'07, Providence, RI, September 2007.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n51.pdf">PDF</a> &nbsp;
-		<span class="tudelft-copyright">©2007 Springer</span>
-			
-		<br>&nbsp;
-		
-		</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Thangarajah,&nbsp;J.; Harland,&nbsp;J.; and Yorke-Smith,&nbsp;N.
-		</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n50.pdf"><h5>A Soft COP Model for Goal Deliberation in a BDI Agent</h5></a><p>
-			Proceedings of CP'07 Workshop on Constraint Modelling and Reformulation,
-			Providence, RI, September 2007.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n50.pdf">PDF</a> 
-			
-		<br>&nbsp;
-			
-		</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Berry,&nbsp;P.; Moffitt,&nbsp;M.&nbsp;D.; Peintner,&nbsp;B.; and Yorke-Smith,&nbsp;N.
-		</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n49.pdf"><h5>The Design of a User-Centric Scheduling System for Multi-Faceted Real-World Problems</h5></a><p>
-			Proceedings of ICAPS'07 Workshop on Moving Planning and Scheduling Systems into the Real World,
-			Providence, RI, September 2007.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n49.pdf">PDF</a>
-			
-		<br>&nbsp;
-			
-		</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Bui,&nbsp;H.&nbsp;H.; Tyson,&nbsp;M.; and Yorke-Smith,&nbsp;N.
-		</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n48.pdf"><h5>Efficient Message Passing and Propagation of Simple Temporal Constraints</h5></a><p>
-			Proceedings of AAAI 2007 Workshop on Spatial and Temporal Reasoning,
-			Vancouver, Canada, July 2007.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n48.pdf">PDF</a> &nbsp; 
-		
-			
-		<br>&nbsp;
-		
-		</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Berry,&nbsp;P.; Gervasio,&nbsp;M.; Peintner,&nbsp;B.; and Yorke-Smith,&nbsp;N.
-		</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n47.pdf"><h5>A Preference Model for Over-Constrained Meeting Requests</h5></a><p>
-			Proceedings of AAAI 2007 Workshop on Preference Handling for Artificial Intelligence,
-			Vancouver, Canada, July 2007.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n47.pdf">PDF</a> &nbsp;
-		
-			
-		<br>&nbsp;
-		
-		</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Thangarajah,&nbsp;J.; Harland,&nbsp;J.; Morley,&nbsp;D.; and Yorke-Smith,&nbsp;N.
-		</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n46.pdf"><h5><b>Aborting Tasks in BDI Agents</b></h5></a><p>
-			Proceedings of AAMAS'07, Honolulu, HI, May 2007.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n46.pdf">PDF</a> &nbsp;
-		<span class="tudelft-copyright">©2007 ACM</span>
-		
-			
-		<br>&nbsp;
-		
-		</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Myers,&nbsp;K. and Yorke-Smith,&nbsp;N.
-		</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n45.pdf"><h5>Proactive Behavior of a Personal Assistive Agent</h5></a><p>
-			Proceedings of AAMAS'07 Workshop on Metareasoning in Agent-Based Systems,
-			Honolulu, HI, May 2007.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n45.pdf">PDF</a>  &nbsp; 
-		
-			
-		<br>&nbsp;
-		
-		</p></div><div class="tudelft-publication"><h6>Yorke-Smith,&nbsp;N. (ed).
-		</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n45.pdf"></a><h5><a href="http://homepage.tudelft.nl/0p6y8/papers/n45.pdf"></a><a href="http://www.ai.sri.com/~nysmith/organizing/sss07/">Interaction Challenges for Intelligent Assistants</a>: Papers from the AAAI Spring Symposium</h5><p>
-			AAAI Technical Report SS-07-04, March 2007.  <a href="http://www.aaai.org/Library/Symposia/Spring/ss07-04.php">AAAI Press</a>, Menlo Park, CA.
-			&nbsp; 
-			
-		<br>&nbsp;
-			
-		</p></div><div class="tudelft-publication"><h6>Berry,&nbsp;P.; Peintner,&nbsp;B.; and Yorke-Smith,&nbsp;N.
-		</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n43.pdf"><h5>Bringing the User Back into Scheduling: Two Case Studies of Interaction
-			with Intelligent Scheduling Assistants</h5></a><p>
-			Proceedings of AAAI 2007 Spring Symposium on Interaction Challenges for Intelligent
-			Assistants, Stanford, CA, March 2007.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n43.pdf">PDF</a> &nbsp;
-		<span class="tudelft-copyright">©2007 AAAI</span>
-		
-			
-		<br>&nbsp;
-			
-		</p></div><div class="tudelft-publication"><h6>Myers,&nbsp;K. and Yorke-Smith,&nbsp;N.
-		</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n42.pdf"><h5>Proactivity in an Intentionally Helpful Personal Assistive Agent</h5></a><p>
-			Proceedings of AAAI 2007 Spring Symposium on Intentions in Intelligent Systems,
-			Stanford, CA, March 2007.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n42.pdf">PDF</a> &nbsp; 
-		<span class="tudelft-copyright">©2007 AAAI</span>
-		
-			
-		<!--
-		<br>&nbsp;
-		
-		</li><li>Berry,&nbsp;P.; Gervasio,&nbsp;M.; Peintner,&nbsp;B.; and Yorke-Smith,&nbsp;N.
-		<em>Balancing the Needs of Personalization and Reasoning in a User-Centric Scheduling Assistant</em>.
-		Technical Note 561, Artificial Intelligence Center, SRI International,
-			February 2007.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n41.pdf">PDF</a> &nbsp;
-		-->
-		</p></div></div><div class="tudelft-year"><h3>2006</h3><div class="tudelft-publication tudelft-publication-journal"><h6>Rossi,&nbsp;F.; Venable,&nbsp;K.&nbsp;B.; and Yorke-Smith,&nbsp;N.
-		   </h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n40.pdf"><h5><b>Uncertainty in Soft Temporal Constraint Problems: A General Framework and Controllability Algorithms for the Fuzzy Case</b></h5></a><p>
-			Journal of Artificial Intelligence Research
-		<b>27</b>, 617-674, December 2006. &nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n40.pdf">PDF</a>
-		<!--    <a href="https://arxiv.org/abs/1110.2212">Abstract</a> -->
-			
-		<br>&nbsp;
-		
-		</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Moffitt,&nbsp;M.&nbsp;D.; Peintner,&nbsp;B.; and Yorke-Smith,&nbsp;N.
-		</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n39.pdf"><h5>Multi-Criteria Optimization of Temporal Preferences</h5></a><p>
-		Proceedings of CP'06 Workshop on Preferences and Soft Constraints, Nantes,
-			France, September 2006.
-		 &nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n39.pdf">PDF</a> &nbsp;
-		
-			 
-		<br>&nbsp;
-		
-		</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Morley,&nbsp;D.; Myers,&nbsp;K.; and Yorke-Smith,&nbsp;N.
-		</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n38.pdf"><h5><b>Continuous Refinement of Agent Resource Estimates</b></h5></a><p>
-		Proceedings of AAMAS'06, Hakodate, Japan, May 2006.
-		 &nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n38.pdf">PDF</a> &nbsp;
-		<span class="tudelft-copyright">©2006 ACM</span> 
-		
-			
-		<br>&nbsp;
-		
-		</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Berry,&nbsp;P.; Conley,&nbsp;K.; Gervasio,&nbsp;M.; Peintner,&nbsp;B.; Uribe,&nbsp;T.; and Yorke-Smith,&nbsp;N.
-		</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n37.pdf"><h5><b>Deploying a Personalized Time Management Agent</b></h5></a><p>
-		Proceedings of AAMAS'06 Industrial Track, Hakodate, Japan, May 2006.
-		 &nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n37.pdf">PDF</a> &nbsp;
-		<span class="tudelft-copyright">©2006 ACM</span> 
-		
-			
-		<br>&nbsp;
-		
-		</p></div><div class="tudelft-publication"><h6>Berry,&nbsp;P.; Albright,&nbsp;C.; Bowring,&nbsp;E.; Conley,&nbsp;K.;
-			Nitz,&nbsp;K.; Pearce,&nbsp;J.; Peintner,&nbsp;P.; Saadati,&nbsp;S.; 
-			Tambe,&nbsp;M.; Uribe,&nbsp;T.; and Yorke-Smith,&nbsp;N.
-		</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n36.pdf"><h5>Conflict Negotiation Among Personal Calendar Agents</h5></a><p>
-		Proceedings of AAMAS'06 Demonstration Track, Hakodate, Japan, May 2006.
-		 &nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n36.pdf">PDF</a> &nbsp;
-		<span class="tudelft-copyright">©2006 ACM</span> 
-		
-			
-		<br>&nbsp;
-		
-		</p></div><div class="tudelft-publication"><h6>Berry,&nbsp;P.; Gervasio,&nbsp;M.; Peintner,&nbsp;B.; Uribe,&nbsp;T.; and Yorke-Smith,&nbsp;N.
-		</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n35.pdf"><h5>Multi-Criteria Evaluation in User-Centric Distributed Scheduling Agents</h5></a><p>
-		Proceedings of AAAI 2006 Spring Symposium on
-		Distributed Plan and Schedule Management, Stanford, CA,
-		March 2006. &nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n35.pdf">PDF</a> &nbsp;
-		<span class="tudelft-copyright">©2006 AAAI</span> 
-			
-		</p></div></div><div class="tudelft-year"><h3>2005</h3><div class="tudelft-publication"><h6>Myers,&nbsp;K. and Yorke-Smith,&nbsp;N.
-		</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n34.pdf"><h5>A Cognitive Framework for Delegation to an Assistive User Agent</h5></a><p>
-		Proceedings of AAAI 2005 Fall Symposium on
-		Mixed-Initiative Problem Solving Assistants, Arlington, VA, 
-		November 2005. &nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n34.pdf">PDF</a> &nbsp;
-		<span class="tudelft-copyright">©2005 AAAI</span>
-			
-		<br>&nbsp;
-		
-		</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Yorke-Smith,&nbsp;N. and Gervet,&nbsp;C.  </h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n33.pdf"><h5>Closures of Uncertain
-			Constraint Satisfaction Problems</h5></a><p> 
-		Proceedings of CP'05 Workshop on Quantification in Constraint Programming,
-			Sitges, Spain, October 2005.
-		 &nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n33.pdf">PDF</a>
-		
-			
-		<br>&nbsp;
-			
-		</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Yorke-Smith,&nbsp;N. and Gervet,&nbsp;C.  </h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n32.pdf"><h5>Uncertain Constraint
-			Optimisation Problems</h5></a><p>
-		Proceedings of CP'05 Workshop on Preferences and
-		Soft Constraints, Sitges, Spain, October 2005.
-		 &nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n32.pdf">PDF</a>
-		
-			
-		<br>&nbsp;
-			
-		</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Berry,&nbsp;P.; Myers,&nbsp;K.; Uribe,&nbsp;T.; and Yorke-Smith,&nbsp;N.
-		</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n31.pdf"><h5>Task Management under Change and Uncertainty: Constraint Solving
-		Experience with the CALO Project</h5></a><p>  Proceedings of CP'05 Workshop on
-		Constraint Solving under Change and Uncertainty, Sitges, Spain, October
-		2005.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n31.pdf">PDF</a>
-		
-			
-		<br>&nbsp;
-			
-		</p></div><div class="tudelft-publication"><h6>Morris,&nbsp;R.&nbsp;A.; Dungan,&nbsp;J.; Edgington,&nbsp;W.; Williams,&nbsp;J.;
-		Carlson,&nbsp;C.; Fleming,&nbsp;D.; Wood,&nbsp;T.; and Yorke-Smith,&nbsp;N.
-		</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n29.pdf"><h5>Coordinated Science Campaign Scheduling for Sensor Webs</h5></a><p>
-		Proceedings of i-SAIRAS'05, Munchen, Germany, September 2005.
-		 &nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n29.pdf">PDF</a> 
-			
-		<br>&nbsp;
-		
-		</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Venable,&nbsp;K.&nbsp;B. and Yorke-Smith,&nbsp;N.
-		</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n28.pdf"><h5><b>Disjunctive Temporal Planning with Uncertainty</b></h5></a><p>
-		Proceedings of IJCAI'05, Edinburgh, UK, August 2005.
-		&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n28.pdf">PDF</a> &nbsp;
-		<span class="tudelft-copyright">©2005 IJCAI</span>
-			
-		<br>&nbsp;
-			
-		</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n26.pdf"><h5><b>Exploiting the Structure of Hierarchical Plans in Temporal
-			Constraint Propagation</b></h5></a><p>  Proceedings of AAAI'05, Pittsburgh, PA,
-			July 2005.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n26.pdf">PDF</a>&nbsp;
-		<span class="tudelft-copyright">©2005 AAAI</span>
-			
-		<br>&nbsp;
-			
-		  </p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Guettier,&nbsp;C. and Yorke-Smith,&nbsp;N.
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n24.pdf"><h5>Enhancing the Anytime Behaviour of Mixed CSP-Based Planning</h5></a><p>
-			Proceedings of ICAPS'05 Workshop on Planning under Uncertainty for
-			Autonomous Systems, Monterey, CA, June 2005.
-		 &nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n24.pdf">PDF</a> 
-			
-		<br>&nbsp;
-		
-		  </p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Berry,&nbsp;P.; Gervasio,&nbsp;M.; Uribe,&nbsp;T.; and Yorke-Smith,&nbsp;N.
-		  </h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n23.pdf"><h5>Mixed-Initiative Issues for a Personalized Time Management Assistant</h5></a><p>
-		  Proceedings of ICAPS'05 Workshop on Mixed-Initiative Planning And Scheduling, Monterey, CA, June 2005.
-		   &nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n23.pdf">PDF</a>  
-			
-		<br>&nbsp;
-		
-		</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Morris,&nbsp;R.&nbsp;A.; Morris,&nbsp;P.; Khatib,&nbsp;L.; and Yorke-Smith,&nbsp;N.    
-			</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n22.pdf"><h5>Temporal Planning with Preferences and Probabilities</h5></a><p>  Proceedings of
-			ICAPS'05 Workshop on Constraint Programming for Planning and Scheduling,
-		Monterey, CA, June 2005.
-			&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n22.pdf">PDF</a> 
-			 
-		</p></div></div><div class="tudelft-year"><h3>2004</h3><div class="tudelft-publication tudelft-publication-conference"><h6>Rossi,&nbsp;F.; Venable,&nbsp;K.&nbsp;B.; and Yorke-Smith,&nbsp;N.
-		</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n19.pdf"><h5><b>Controllability of Soft Temporal Constraint Problems</b></h5></a><p>
-		Proceedings of CP'04, Toronto, Canada, September 2004.
-		&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n19.pdf">PDF</a>&nbsp;
-		<span class="tudelft-copyright">©2004 Springer</span>
-			
-		<br>&nbsp;
-			
-		</p></div><div class="tudelft-publication tudelft-publication-workshop"><h6>Yorke-Smith,&nbsp;N. and Gervet,&nbsp;C.  </h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n17.pdf"><h5>Tight and Tractable
-		Reformulations for Uncertain CSPs</h5></a><p>  
-		Proceedings of CP'04 Workshop on Modelling and Reformulating Constraint
-		Satisfaction Problems, Toronto, Canada, September 2004.
-		&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n17.pdf">PDF</a>
-		
-			
-		<br>&nbsp;
-			
-		</p></div><div class="tudelft-publication"><h6>Petrie,&nbsp;K.&nbsp;E.; Smith,&nbsp;B.&nbsp;M.; and Yorke-Smith,&nbsp;N.
-		</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n16.pdf"><h5>Dynamic Symmetry Breaking in Constraint Programming and Linear
-		Programming Hybrids</h5></a><p>  Proceedings of STAIRS'04, Valencia, Spain, August 2004.
-		&nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n16.pdf">PDF</a>
-			
-		<br>&nbsp;
-			
-		</p></div><div class="tudelft-publication"><h6>Yorke-Smith,&nbsp;N. </h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n16.pdf"><h5>Reliable Constraint Reasoning with Uncertain
-		Data</h5></a><p>  PhD thesis, IC-Parc, Imperial College London, June 2004.
-		&nbsp; 
-			
-		</p></div></div><div class="tudelft-year"><h3>2003</h3><div class="tudelft-publication"><h6>Yorke-Smith,&nbsp;N. and Guettier,&nbsp;C.  </h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n11.pdf"><h5>Towards Automatic
-		Robust Planning for the Discrete Commanding of Aerospace Equipment</h5></a><p>
-		Proceedings of 2003 IEEE International Symposium on Intelligent Control,
-		Houston, TX, October 2003. &nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n11.pdf">PDF</a>
-		&nbsp;<span class="tudelft-copyright">©2003 IEEE</span>
-			
-		<br>&nbsp;
-		
-		</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Yorke-Smith,&nbsp;N. and Gervet,&nbsp;C.  </h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n10.pdf"><h5><b>Certainty Closure:
-		A Framework for Reliable Constraint Reasoning with Uncertainty</b></h5></a><p>
-		Proceedings of CP'03, Kinsale, Ireland, September
-		2003. &nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n10.pdf">PDF</a>&nbsp;
-		<span class="tudelft-copyright">©2003 Springer</span>
-			
-		<br>&nbsp;
-		
-		</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Yorke-Smith,&nbsp;N.; Venable,&nbsp;K.&nbsp;B.; and Rossi,&nbsp;F.
-		</h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n8.pdf"><h5><b>Temporal Reasoning with Preferences and Uncertainty</b></h5></a><p>  Proceedings
-		of IJCAI'03, Acapulco, Mexico, August 2003.
-			&nbsp;<a href="http://homepage.tudelft.nl/0p6y8/papers/n8.pdf">PDF</a>&nbsp;
-		<span class="tudelft-copyright">©2003 IJCAI</span>    
-			
-		</p></div></div><div class="tudelft-year"><h3>2002</h3><div class="tudelft-publication tudelft-publication-journal"><h6>Riera,&nbsp;D. and Yorke-Smith,&nbsp;N.  </h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n6.pdf"><h5><b>An Improved Hybrid Model for the
-		Generic Hoist Scheduling Problem</b></h5></a><p>  Annals of Operations Research
-		<b>115</b>, 173-191, September 2002. &nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n6.pdf">PDF</a>&nbsp;
-			<span class="tudelft-copyright">©2002 Springer</span>
-			
-		<br>&nbsp;
-		  
-		</p></div><div class="tudelft-publication tudelft-publication-conference"><h6>Yorke-Smith,&nbsp;N. and Gervet,&nbsp;C.  </h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n4.pdf"><h5><b>On Constraint Problems with
-		Incomplete or Erroneous Data</b></h5></a><p>  Proceedings of CP'02, Ithaca, NY,
-		September 2002. &nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n4.pdf">PDF</a>&nbsp;
-			<span class="tudelft-copyright">©2002 Springer</span>
-			
-		</p></div></div><div class="tudelft-year"><h3>2001</h3><div class="tudelft-publication"><h6>Yorke-Smith,&nbsp;N. and Gervet,&nbsp;C.  </h6><a href="http://homepage.tudelft.nl/0p6y8/papers/n1.pdf"><h5>Data Uncertainty in Constraint
-		Programming: A Non-Probabilistic Approach</h5></a><p>  Proceedings of AAAI
-		2001 Fall Symposium on Using Uncertainty within Computation, Cape Cod, MA,
-		November 2001. &nbsp; <a href="http://homepage.tudelft.nl/0p6y8/papers/n1.pdf">PDF</a>&nbsp;
-			<span class="tudelft-copyright">©2001 AAAI</span> 
-			
-			
-		</p></div></div>
-		</div>
     </body>
 </html>
