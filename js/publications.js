@@ -7,17 +7,31 @@ function show(query){
     }
 
     var publications = document.querySelectorAll(".tudelft-publication");
-    if (query) query = "-"+query;
-    for (let index = 0; index < publications.length; index++) {
-        const element = publications[index];
-        console.log(element.classList,"tudelft-publication"+query)
-        if (element.classList.contains("tudelft-publication"+query)){
-            element.style.display="block";
-        }
-        else{
-            element.style.display="none";
+    //if show("other") was called, display only the publications which do not have any category.
+    if (query == "other"){
+        for (let index = 0; index < publications.length; index++) {
+            const element = publications[index];
+            if (element.className == "tudelft-publication"){
+                element.style.display="block";
+            }
+            else{
+                element.style.display="none";
+            }
         }
     }
+    else{
+        if (query) query = "-"+query;
+        for (let index = 0; index < publications.length; index++) {
+            const element = publications[index];
+            if (element.classList.contains("tudelft-publication"+query)){
+                element.style.display="block";
+            }
+            else{
+                element.style.display="none";
+            }
+        }
+    }
+    
 
     //hide years in which all publications are hidden
     for (let index = 0; index < years.length; index++) {
